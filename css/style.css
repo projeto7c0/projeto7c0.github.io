@@ -138,7 +138,7 @@ body{
 #boxes .box {
     float: left;
     text-align: center;
-    width: 30%; /* Again, to be responsivem we set a percentage value. */ 
+    width: 25%; /* Again, to be responsivem we set a percentage value. */ 
     padding: 25px;
 }
 
