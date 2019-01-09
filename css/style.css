@@ -1,0 +1,242 @@
+/* CSS FILE */
+
+/* Global */
+
+.container{ /* As "container" is a class we use the dot before the word "container". */
+    width: 80%; /* We're setting the width as a percentage in order to make the page responsive. */
+    margin: auto; 
+    overflow: hidden; /* When the screen get resized we won't see a scroolbar. */
+
+}
+
+ul{
+    margin: 0;
+    padding: 0;    
+}
+
+.button_1{
+    height: 38px;
+    background: #000000; 
+    border: #808080 3px solid;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #ffffff;
+}
+
+.dark{
+    padding: 15px;
+    background: #000000;
+    color: #ffffff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Header */
+header{
+    background: #000000;    
+    color: #ffffff; /* The header letter's color get white. */
+    padding-top: 30px; /* Margin in the top. */
+    min-height: 70px; /* When the screen gets smaller that is the minimun height it gets. */
+    border-bottom: #808080 3px solid; /* A very subtle grey colored border in the header. */
+}
+
+header a{ /* CSS for the header links. */
+    color: #ffffff;
+    text-decoration: none; /* Remove underline. */
+    text-transform: uppercase; /* We don't have to use uppercases in the HTML markup. */
+    font-size: 16px;
+}
+
+header li{
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px; /*Top, right, bottom, left. */
+}
+
+header #branding{
+    float: left;
+}
+
+header #branding h1{
+    margin: 0;
+}
+
+header nav{
+    float: right;
+    margin-top: 10px;
+}
+
+header .highlight, header .current a{
+    color: #808080; /* #35424a */
+    font-weight: bold;
+}
+
+header a:hover{ /* When you pass the mouse over the nav the text will change its colors. */
+    color: #cccccc;
+    font-weight: bold;
+}
+
+/* Body */
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Showcase */ 
+
+#showcase{
+    min-height: 400px; /* Just set a minimun value because we want the site to be responsive. */
+    background: url('../img/eye.png') no-repeat 51% 40%; /* We move up the picture verticaly. */
+    text-align: center;
+    color: #ffffff;
+}
+
+#showcase h1{
+    margin-top: 100px;
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+#showcase p{
+    font-size: 20px;
+}
+
+/* Newsletter */ 
+
+#newsletter{
+    margin-top: 20px;
+    padding: 15px;
+    color: #ffffff;
+    background: #808080;
+}
+
+#newsletter h1{    
+    float: left;
+}
+
+#newsletter form{
+    float: right;
+    margin-top: 15px;
+}
+
+#newsletter input[type="email"]{
+    padding: 4px;
+    height: 25px;
+    width: 250px;
+}
+
+/* Boxes */
+
+#boxes {
+    margin-top: 30px;
+}
+
+#boxes .box {
+    float: left;
+    text-align: center;
+    width: 30%; /* Again, to be responsivem we set a percentage value. */ 
+    padding: 25px;
+}
+
+#boxes img{
+    width: 90px;
+}
+
+/* Main-col */
+
+article#main-col{
+    float: left;
+    width: 65%;
+}
+
+/* Sidebar */
+
+aside#sidebar{
+    float: right;
+    width: 20%; /* Again, to be responsivem we set a percentage value. */ 
+    margin-top: 10px;
+}
+
+aside#sidebar .quote input, aside#sidebar .quote textarea{ /* Note that all input elements are being affected. */
+    width: 95%;/* Again, to be responsivem we set a percentage value. */
+    padding: 5px;
+}
+
+/* Services */
+
+ul#services li{
+    list-style: none;
+    padding: 20px;
+    border: #cccccc solid 1px;
+    margin-bottom: 5px;
+    background: #e6e6e6;
+}
+
+/* Footer */
+
+footer{
+    padding: 20px;
+    margin-top: 0px;
+    color: #ffffff;
+    background-color: #000000; 
+    text-align: center;
+}
+
+/* Media Queries */ /* Code to make the page adapt dependin on the device screen. */
+
+@media(max-width: 768px){ 
+    header #branding,
+    header nav, 
+    header nav li, 
+    #newsletter h1, 
+    #newsletter form,
+    #boxes .box,
+    article#main-col,
+    aside#sidebar{ /* The branding and other itens will be on top of each other. */
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    header{ /* Add some space underneath the header when the screen get resized. */
+        padding-bottom: 20px;
+    }
+
+    #showcase{
+        min-height: 400px; /* Just set a minimun value because we want the site to be responsive. */
+        background: url('../img/eye.png') no-repeat 50% 40%; /* We move up the picture verticaly. */
+        text-align: center;
+        color: #ffffff;
+        width: 100%
+    }
+
+    #showcase h1{ /* It's 100px margin as default. */
+        margin-top: 40px;
+    }
+
+    #newsletter button, .quote button{
+        display: block;
+        width: 100%;
+    }
+
+    #newsletter form input[type="email"], .quote input, .quote textarea{
+        width: 100%;
+        margin-bottom: 5px;
+    }    
+}
+
+
+
+
+
+
+
+
+
+
+
+

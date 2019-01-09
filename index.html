@@ -1,12 +1,72 @@
 <!DOCTYPE html>
 <html>
-<body>
-<h1>Projeto 7c0</h1>
-<p>Esse site ainda está em construção.</p>
-<p>O código fonte do projeto se encontra <a href="https://github.com/projeto7c0/7c0-core">aqui.</a></p>
-<p>A lista com os políticos e suas contas nas redes sociais está <a href="https://github.com/projeto7c0/redes-sociais-politicos">aqui.</a></p>
-<p>E algumas informações sobre o projeto estão no <a href="https://github.com/projeto7c0/faq">FAQ.</a></p>
-<p>A conta do projeto no Twitter é <a href="https://www.twitter.com/projeto7c0">@projeto7c0</a></p>
-<p>Email de contato é bigbrother@projeto7c0.com.br</p>
-</body>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <meta name="description" content="Website do Projeto 7C0."> 
+        <meta name="keywords" content="Projeto 7C0, monitoramento, políticos, atores públicos">
+        <link rel="icon" type="image/x-icon" href="./img/eye.ico"/>
+        <title>Projeto 7C0 | Home</title>
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div id="branding">
+                    <h1><spam class="highlight">Projeto</spam> 7C0</h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li class="current"><a href="index.html">Home</a></li>
+                        <li><a href="about.html">Sobre</a></li>
+                        <li><a href="team.html">Equipe</a></li> 
+                        <li><a href="source.html">Código-Fonte</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section id="showcase">
+            <div class="container">                
+                <!-- <h1>Header1</h1> --> <!-- Textos não necessários... é para evitar sobrescrever a imagem principal -->
+                <!-- <p>Um texto qualquer</p> -->
+            </div>
+        </section>
+        <section id="boxes">
+            <div class="container">
+                <div class="box">
+                    <img src="./img/about.jpg">
+                    <h3>O que é o projeto?</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus dictum nisl, vitae accumsan velit tempor a.</p>
+                </div>
+                <div class="box">
+                    <img src="./img/team.jpg">
+                    <h3>Quem somos?</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus dictum nisl, vitae accumsan velit tempor a.</p>
+                </div>
+                <div class="box">
+                    <img src="./img/source.jpg">
+                    <h3>Acesso ao Código-Fonte</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus dictum nisl, vitae accumsan velit tempor a.</p>
+                </div>
+            </div>
+        </section>
+        <section id="newsletter">
+            <div class="container">
+                <h1>Receba Nossa Newsletter</h1>
+                <form action="process.php">
+                    <input type="email" placeholder="Digite seu e-mail...">
+                    <button type="submit" class="button_1">Inscreva-se</button>                </form>
+            </div>
+        </section>        
+        <footer>
+            <p>Projeto 7C0, Copyright &copy; 2019</p>
+        </footer>
+    </body>
 </html>
+
+<!-- Browser Sync -->
+<!-- 
+    You can sync this code using VSCode Browser Sync by typing "Server mode in browser" and then
+    chosing the following files to be sync "*.html|./css/*.css".
+-->
+
