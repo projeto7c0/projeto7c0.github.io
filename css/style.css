@@ -1,6 +1,6 @@
 /* CSS FILE */
 
-/* Global */
+/* --------------- Global --------------- */
 
 .container{ /* As "container" is a class we use the dot before the word "container". */
     width: 80%; /* We're setting the width as a percentage in order to make the page responsive. */
@@ -24,14 +24,15 @@ ul{
 }
 
 .dark{
-    padding: 15px;
+    padding: 20px;
     background: #000000;
     color: #ffffff;
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
-/* Header */
+/* --------------- Header --------------- */
+
 header{
     background: #000000;    
     color: #ffffff; /* The header letter's color get white. */
@@ -76,7 +77,7 @@ header a:hover{ /* When you pass the mouse over the nav the text will change its
     font-weight: bold;
 }
 
-/* Body */
+/* --------------- Body --------------- */
 
 body{
     font-family: Arial, Helvetica, sans-serif;
@@ -86,7 +87,7 @@ body{
     background-color: #f4f4f4;
 }
 
-/* Showcase */ 
+/* --------------- Showcase --------------- */ 
 
 #showcase{
     min-height: 400px; /* Just set a minimun value because we want the site to be responsive. */
@@ -105,7 +106,7 @@ body{
     font-size: 20px;
 }
 
-/* Newsletter */ 
+/* --------------- Newsletter --------------- */ 
 
 #newsletter{
     margin-top: 20px;
@@ -129,7 +130,7 @@ body{
     width: 250px;
 }
 
-/* Boxes */
+/* --------------- Boxes --------------- */
 
 #boxes {
     margin-top: 30px;
@@ -146,14 +147,14 @@ body{
     width: 180px;
 }
 
-/* Main-col */
+/* --------------- Main-col --------------- */
 
 article#main-col{
     float: left;
     width: 65%;
 }
 
-/* Sidebar */
+/* --------------- Sidebar --------------- */
 
 aside#sidebar{
     float: right;
@@ -164,9 +165,10 @@ aside#sidebar{
 aside#sidebar .quote input, aside#sidebar .quote textarea{ /* Note that all input elements are being affected. */
     width: 95%;/* Again, to be responsivem we set a percentage value. */
     padding: 5px;
+    
 }
 
-/* Services */
+/* --------------- Services --------------- */
 
 ul#services li{
     list-style: none;
@@ -176,7 +178,7 @@ ul#services li{
     background: #e6e6e6;
 }
 
-/* Footer */
+/* --------------- Footer --------------- */
 
 footer{
     padding: 20px;
@@ -186,9 +188,13 @@ footer{
     text-align: center;
 }
 
-/* Media Queries */ /* Code to make the page adapt dependin on the device screen. */
+/* --------------- Media Queries --------------- */ 
+/* Code to make the page adapt dependin on the device screen. */
 
-@media(max-width: 768px){ 
+/* Change the elements when the browser window is 768px
+ * wide or less:
+ */
+@media only screen and(max-width: 768px){ 
     header #branding,
     header nav, 
     header nav li, 
