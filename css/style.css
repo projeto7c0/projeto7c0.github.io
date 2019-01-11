@@ -191,9 +191,7 @@ footer{
 /* --------------- Media Queries --------------- */ 
 /* Code to make the page adapt dependin on the device screen. */
 
-/* Change the elements when the browser window is 768px
- * wide or less:
- */
+/* Change the elements when the browser window is 768px wide or less: */
 @media only screen and(max-width: 768px){ 
     header #branding,
     header nav, 

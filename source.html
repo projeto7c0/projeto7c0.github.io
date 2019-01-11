@@ -8,6 +8,7 @@
         <link rel="icon" type="image/x-icon" href="./img/eye.ico"/>
         <title>Projeto 7C0 | Código-Fonte</title>
         <link rel="stylesheet" href="./css/style.css">
+        <script type="text/javascript" src="./js/scripts.js"></script>
     </head>
     <body>
         <header>
@@ -26,42 +27,45 @@
             </div>
         </header>
         <section id="main">
-            <div class="container_sourcecode">
+            <div class="container">
                 <article id="main-col">
                     <h1 class="page-title">Como Utilizar o Código-Fonte?</h1>
                     <ul id="services">
                         <li>
                             <h3>As APIs do Twitter</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tristique erat efficitur, pretium nulla sit amet, rutrum dui. Morbi rhoncus convallis euismod.</p>
+                            <p>Em breve.</p>
                         </li>
                         <li>
                             <h3>Código Pyton</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tristique erat efficitur, pretium nulla sit amet, rutrum dui. Morbi rhoncus convallis euismod.</p>
+                            <p>Em breve.</p>
                         </li>
                         <li>
                             <h3>Código-Fonte no Github</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tristique erat efficitur, pretium nulla sit amet, rutrum dui. Morbi rhoncus convallis euismod.</p>
+                            <p>Em breve.</p>
                             </li>
                     </ul>                    
                 </article>
                 <aside id="sidebar">
                     <div class="dark">
                         <h3>Entre em Contato Conosco</h3>
-                        <form action="getaquote.php" class="quote">
-                            <div>
-                                <label>Nome</label><br>
-                                <input type="text" placeholder="Digite seu nome...">
-                            </div>
-                            <div>
-                                <label>E-mail</label><br>
-                                <input type="email" placeholder="Digite seu e-mail...">
-                            </div>
-                            <div>
-                                <label>Mensagem</label><br>
-                                <textarea placeholder="Digite sua mensagem..."></textarea>
-                            </div>
-                            <button class="button_1" type="submit">Enviar</button>
-                        </form>                               
+                            <!--
+                                <form action="getaquote.php" class="quote"></form>                        
+                             -->
+                            <form action="getaquote.php" class="quote"></form>                        
+                                <div>
+                                    <label>Nome</label><br>
+                                    <input type="text" onclick="myAlert()" placeholder="Digite seu nome..." >
+                                </div>
+                                <div>
+                                    <label>E-mail</label><br>
+                                    <input type="email" onclick="myAlert()" placeholder="Digite seu e-mail...">
+                                </div>
+                                <div>
+                                    <label>Mensagem</label><br>
+                                    <textarea onclick="myAlert()" placeholder="Digite sua mensagem..."></textarea>
+                                </div>
+                                    <button class="button_1" type="submit" onclick="myAlert()">Enviar</button>
+                            </form>                               
                     </div>
                 </aside>                
             </div>
@@ -69,9 +73,14 @@
         <section id="newsletter">
             <div class="container">
                 <h1>Receba Nossa Newsletter</h1>
-                <form action="process.php">
-                    <input type="email" placeholder="Digite seu e-mail...">
-                    <button type="submit" class="button_1">Inscreva-se</button>                </form>
+                <!--
+                    <form action="process.php">                
+                -->
+                <form> <!-- Trocar essa tag pela tag acima quando estiver implementada -->   
+                
+                        <input type="email" onclick="myAlert()" placeholder="Digite seu e-mail...">
+                        <button class="button_1" type="submit" onclick="myAlert()">Inscreva-se</button>                
+                </form>
             </div>
         </section>
         <footer>
