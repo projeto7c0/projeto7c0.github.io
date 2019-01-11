@@ -1,65 +1,72 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width">
-        <meta name="description" content="Website do Projeto 7C0."> 
-        <meta name="keywords" content="Projeto 7C0, monitoramento, políticos, atores públicos">
-        <link rel="icon" type="image/x-icon" href="./img/eye.ico"/>
-        <title>Projeto 7C0 | Home</title>
-        <link rel="stylesheet" href="./css/style.css">
-        <script type="text/javascript" src="./js/scripts.js"></script>
-    </head>
-    <body>
-        <header>
-            <div class="container">
-                <div id="branding">
-                    <h1><spam class="highlight">Projeto</spam> 7C0</h1>
-                </div>
-                <nav>
-                    <ul>
-                        <li class="current"><a href="index.html">Home</a></li>
-                        <li><a href="about.html">Sobre</a></li>
-                        <li><a href="source.html">Código-Fonte</a></li>
-                    </ul>
-                </nav>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Website do Projeto 7C0.">
+    <meta name="keywords" content="Projeto 7C0, monitoramento, políticos, atores públicos">
+    <link rel="icon" type="image/x-icon" href="./img/eye.ico" />
+    <title>Projeto 7C0 | Home</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1>
+                    <spam class="highlight">Projeto</spam> 7C0
+                </h1>
             </div>
-        </header>
-        <section id="showcase">
-            <div class="container">                
-                <!-- <h1>Header1</h1> --> <!-- Textos não necessários... é para evitar sobrescrever a imagem principal -->
-                <!-- <p>Um texto qualquer</p> -->
+            <nav>
+                <ul>
+                    <li class="current"><a href="index.html">Home</a></li>
+                    <li><a href="about.html">Sobre</a></li>
+                    <li><a href="source.html">Código-Fonte</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="showcase">
+        <div class="eye_container">
+            <!-- <h1>Header1</h1> -->
+            <!-- Textos não necessários... é para evitar sobrescrever a imagem principal -->
+            <!-- <p>Um texto qualquer</p> -->
+            <img src="./img/eye_transparent.png">
+        </div>
+    </section>
+
+    <section id="boxes">
+        <div class="box_container">
+            <div class="box">
+                <img src="./img/7.png">
+                <h3>O que é o projeto?</h3>
+                <p>Não podemos nos esquecer das promessas que os políticos fazem, nem tão pouco permitir que deletem
+                    palavras ditas publicamente. <a href="about.html">O 7C0 faz esse papel no Twitter</a>.</p>
             </div>
-        </section>
-        <section id="boxes">
-            <div class="container">
-                <a href="about.html">
-                    <div class="box">
-                        <img src="./img/7.png">
-                        <h3>O que é o projeto?</h3>
-                        <p>Não podemos nos esquecer das promessas que os políticos fazem, nem tão pouco permitir que deletem palavras ditas publicamente. O 7c0 faz esse papel no Twitter.</p>
-                    </div>
-                </a>
-                <a target="_top" href="https://www.twitter.com/projeto7c0">                
-                    <div class="box">
-                        <img src="./img/c.png">
-                        <h3>Siga no Twitter</h3>
-                        <p>A conta @projeto7c0 no Twitter posta todos os dias tweets que foram apagados por diversos políticos brasileiros, siga a gente lá!</p>
-                    </div>
-                </a>
-                <a href="source.html">
-                    <div class="box">
-                        <img src="./img/0.png">
-                        <h3>Github do projeto</h3>
-                        <p>O código fonte, a lista de políticos acompanhados e o código desse site estão todos disponíveis no github.</p>
-                    </div>
-                </a>
+            <div class="box">
+                <img src="./img/c.png">
+                <h3>Siga no Twitter?</h3>
+                <p>A conta <a href="https://www.twitter.com/projeto7c0">@projeto7C0</a> no Twitter posta todos os dias
+                    tweets que foram apagados por diversos políticos brasileiros. Siga a gente lá!</p>
             </div>
-        </section>
-        <footer>
-            <p>Projeto 7C0, Copyright &copy; 2019</p>
-        </footer>
-    </body>
+            <div class="box">
+                <img src="./img/0.png">
+                <h3>Github do Projeto</h3>
+                <p>O código-fonte do projeto, a lista de políticos acompanhados e o código-fonte deste site <a href="https://github.com/projeto7c0">estão
+                        disponíveis no Github</a>.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Projeto 7C0, Copyright &copy; 2019</p>
+    </footer>
+</body>
+
 </html>
 
 <!-- Browser Sync -->
@@ -67,4 +74,3 @@
     You can sync this code using VSCode Browser Sync by typing "Server mode in browser" and then
     chosing the following files to be sync "*.html|./css/*.css".
 -->
-

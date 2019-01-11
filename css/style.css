@@ -6,7 +6,6 @@
     width: 80%; /* We're setting the width as a percentage in order to make the page responsive. */
     margin: auto; 
     overflow: hidden; /* When the screen get resized we won't see a scroolbar. */
-
 }
 
 ul{
@@ -89,11 +88,23 @@ body{
 
 /* --------------- Showcase --------------- */ 
 
-#showcase{
-    min-height: 400px; /* Just set a minimun value because we want the site to be responsive. */
-    background: url('../img/eye.png') no-repeat 51% 40%; /* We move up the picture verticaly. */
+#showcase{    
     text-align: center;
     color: #ffffff;
+    background-color: white;
+}
+
+#showcase .eye_container{ /* As "container" is a class we use the dot before the word "container". */
+    width: 80%; /* We're setting the width as a percentage in order to make the page responsive. */
+    margin: auto; 
+    overflow: hidden; /* When the screen get resized we won't see a scroolbar. */    
+}
+
+#showcase img{
+    padding: 40px 0px 40px 0px; /* top, right, bottom, left */
+    width: 100%;
+    max-width: 450px;
+    height: auto;
 }
 
 #showcase h1{
@@ -134,6 +145,12 @@ body{
 
 #boxes {
     margin-top: 30px;
+}
+
+#boxes .box_container{ /* As "container" is a class we use the dot before the word "container". */
+    width: 80%; /* We're setting the width as a percentage in order to make the page responsive. */
+    margin: auto; 
+    overflow: hidden; /* When the screen get resized we won't see a scroolbar. */   
 }
 
 #boxes .box {
@@ -212,7 +229,6 @@ footer{
 
     #showcase{
         min-height: 400px; /* Just set a minimun value because we want the site to be responsive. */
-        background: url('../img/eye.png') no-repeat 50% 40%; /* We move up the picture verticaly. */
         text-align: center;
         color: #ffffff;
         width: 100%
