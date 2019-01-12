@@ -101,9 +101,9 @@ body{
 }
 
 #showcase img{
-    padding: 40px 0px 40px 0px; /* top, right, bottom, left */
+    padding: 30px 0px 60px 0px; /* top, right, bottom, left */
     width: 100%;
-    max-width: 450px;
+    max-width: 400px;
     height: auto;
 }
 
@@ -133,25 +133,28 @@ body{
 
 /* --------------- Boxes --------------- */
 
-#boxes {
-    margin-top: 30px;
+#boxes .box_container {    
+    display: flex;
+    flex-direction: row; /* Coloca os elementos dispostos em linhas ou colunas */
+    justify-content: center; /* Centraliza tudo centro do container */
+    align-items: center;
 }
 
-#boxes .box_container{ /* As "container" is a class we use the dot before the word "container". */
-    width: 80%; /* We're setting the width as a percentage in order to make the page responsive. */
-    margin: auto; 
-    overflow: hidden; /* When the screen get resized we won't see a scroolbar. */   
+#boxes .gallery {    
+    width: 23%;
+    height: 280px;
+    padding: 50px 50px 20px 50px; /* top, right, bottom, left */
 }
 
-#boxes .box {
-    float: left;
-    text-align: center;
-    width: 25%; /* Again, to be responsivem we set a percentage value. */ 
-    padding: 25px;
+#boxes div.box {    
+    text-align: center; /* Centraliza todos os elementos de texto cada box */
 }
 
-#boxes img{
-    width: 180px;
+#boxes div.box img {
+    width: 100%;
+    max-width: 250px;
+    min-width: 145px;
+    height: auto;
 }
 
 /* --------------- Main-col --------------- */
@@ -204,8 +207,7 @@ footer{
     header nav, 
     header nav li, 
     #newsletter h1, 
-    #newsletter form,
-    #boxes .box,
+    #newsletter form,    
     article#main-col,
     aside#sidebar{ /* The branding and other itens will be on top of each other. */
         float: none;
@@ -218,15 +220,34 @@ footer{
     }
 
     #showcase{
-        min-height: 400px; /* Just set a minimun value because we want the site to be responsive. */
-        text-align: center;
-        color: #ffffff;
-        width: 100%
+        min-height: 350px; /* Just set a minimun value because we want the site to be responsive. */
     }
 
-    #showcase h1{ /* It's 100px margin as default. */
-        margin-top: 40px;
+    #showcase img{
+        padding: 40px 0px 0px 0px; /* top, right, bottom, left */
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+    }   
+    
+    #boxes .box_container {
+        display: flex;
+        flex-direction: column; /* Coloca os elementos dispostos em linhas ou colunas */
+        justify-content: center; /* Centraliza tudo centro do container */
+        align-items: center;
     }
+
+    #boxes .gallery {
+        width: 50%;
+        height: auto;
+        padding: 20px 10px 10px 10px; /* top, right, bottom, left */
+    }
+
+    #boxes div.box img {
+        width: 100%;
+        max-width: 180px;
+        height: auto;
+    }    
 
     #newsletter button, .quote button{
         display: block;
