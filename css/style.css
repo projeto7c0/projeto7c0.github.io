@@ -220,7 +220,7 @@ footer{
     }
 
     #showcase{
-        min-height: 280px; /* Just set a minimun value because we want the site to be responsive. */
+        min-height: 250px; /* Just set a minimun value because we want the site to be responsive. */
     }
 
     #showcase img{
