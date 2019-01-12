@@ -220,13 +220,13 @@ footer{
     }
 
     #showcase{
-        min-height: 350px; /* Just set a minimun value because we want the site to be responsive. */
+        min-height: 280px; /* Just set a minimun value because we want the site to be responsive. */
     }
 
     #showcase img{
         padding: 40px 0px 0px 0px; /* top, right, bottom, left */
         width: 100%;
-        max-width: 350px;
+        max-width: 250px;
         height: auto;
     }   
     
@@ -245,7 +245,6 @@ footer{
 
     #boxes div.box img {
         width: 100%;
-        max-width: 180px;
         height: auto;
     }    
 
