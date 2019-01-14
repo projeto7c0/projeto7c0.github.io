@@ -4,7 +4,7 @@ O Projeto 7C0 é um projeto de código-fonte aberto que tem por objetivo criar m
 ## Linguagens utilizadas
 O website foi desenvolvido para ser responsivo e foi desenvolvido em HTML5 e CSS3.
 
-### Site do Projeto 7c0
+### Website do Projeto 7c0
 http://www.projeto7c0.com.br
 
 ### Twitter do Projeto 7c0
