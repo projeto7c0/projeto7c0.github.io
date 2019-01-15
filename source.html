@@ -1,91 +1,101 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width">
-        <meta name="description" content="Website do Projeto 7C0."> 
-        <meta name="keywords" content="Projeto 7C0, monitoramento, políticos, atores públicos">
-        <link rel="icon" type="image/x-icon" href="./img/eye.ico"/>
-        <title>Projeto 7C0 | Código-Fonte</title>
-        <link rel="stylesheet" href="./css/style.css">
-        <script type="text/javascript" src="./js/scripts.js"></script>
-    </head>
-    <body>
-        <header>
-            <div class="container">
-                <div id="branding">
-                    <h1><spam class="highlight">Projeto</spam> 7C0</h1>
-                </div>
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">Sobre</a></li>
-                        <li class="current"><a href="source.html">Código-Fonte</a></li>
-                    </ul>
-                </nav>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Website do Projeto 7C0.">
+    <meta name="keywords" content="Projeto 7C0, monitoramento, políticos, atores públicos">
+    <link rel="icon" type="image/x-icon" href="./img/eye.ico" />
+    <title>Projeto 7C0 | Código-Fonte</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script type="text/javascript" src="./js/scripts.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1>
+                    <spam class="highlight">Projeto</spam> 7C0
+                </h1>
             </div>
-        </header>
-        <section id="main">
-            <div class="container">
-                <article id="main-col">
-                    <h1 class="page-title">Como Utilizar o Código-Fonte?</h1>
-                    <ul id="services">
-                        <li>
-                            <h3>As APIs do Twitter</h3>
-                            <p>Em breve.</p>
-                        </li>
-                        <li>
-                            <h3>Código Pyton</h3>
-                            <p>Em breve.</p>
-                        </li>
-                        <li>
-                            <h3>Código-Fonte no Github</h3>
-                            <p>Em breve.</p>
-                            </li>
-                    </ul>                    
-                </article>
-                <aside id="sidebar">
-                    <div class="dark">
-                        <h3>Entre em Contato Conosco</h3>
-                            <!--
-                                <form action="getaquote.php" class="quote"></form>                        
-                             -->
-                            <form action="getaquote.php" class="quote"></form>                        
-                                <div>
-                                    <label>Nome</label><br>
-                                    <input type="text" onclick="myAlert()" placeholder="Digite seu nome..." >
-                                </div>
-                                <div>
-                                    <label>E-mail</label><br>
-                                    <input type="email" onclick="myAlert()" placeholder="Digite seu e-mail...">
-                                </div>
-                                <div>
-                                    <label>Mensagem</label><br>
-                                    <textarea onclick="myAlert()" placeholder="Digite sua mensagem..."></textarea>
-                                </div>
-                                    <button class="button_1" type="submit" onclick="myAlert()">Enviar</button>
-                            </form>                               
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">Sobre</a></li>
+                    <li class="current"><a href="source.html">Código-Fonte</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="main">
+        <div class="container">
+            <article id="main-col">
+                <h1 class="page-title">Como Utilizar o Código-Fonte?</h1>
+                <ul id="services">
+                    <li>
+                        <h3>As APIs do Twitter</h3>
+                        <p>Em breve.</p>
+                    </li>
+                    <li>
+                        <h3>Código Pyton</h3>
+                        <p>Em breve.</p>
+                    </li>
+                    <li>
+                        <h3>Código-Fonte no Github</h3>
+                        <p>Em breve.</p>
+                    </li>
+                </ul>
+            </article>
+            <aside id="sidebar">
+                <div class="dark">
+                    <h3>Entre em Contato Conosco</h3>
+                    <!--
+                        <form action="getaquote.php" class="quote"></form>                        
+                    -->
+                    <form action="getaquote.php" class="quote"></form>
+                    <div>
+                        <label>Nome</label><br>
+                        <input id="name" name="name" type="text" placeholder="Digite seu nome..." required>
                     </div>
-                </aside>                
-            </div>
-        </section>
-        <section id="newsletter">
-            <div class="container">
-                <h1>Receba Nossa Newsletter</h1>
-                <!--
-                    <form action="process.php">                
-                -->
-                <form> <!-- Trocar essa tag pela tag acima quando estiver implementada -->   
-                
-                        <input type="email" onclick="myAlert()" placeholder="Digite seu e-mail...">
-                        <button class="button_1" type="submit" onclick="myAlert()">Inscreva-se</button>                
+                    <div>
+                        <label>E-mail</label><br>
+                        <input id="email" name="email" type="email" placeholder="Digite seu e-mail..." required>
+                    </div>
+                    <div>
+                        <label>Mensagem</label><br>
+                        <textarea id="comment" name="comment" placeholder="Digite sua mensagem..." onKeyDown="charCountUpdate('comment','charCounter');"
+                            onKeyUp="charCountUpdate('comment','charCounter')" rows="5" cols="" required></textarea>
+                        <br>
+                        <span id=charCounter></span>
+                    </div>
+                    <button class="button_1" type="submit" onclick="myAlert()">Enviar</button>
+                </div>
                 </form>
-            </div>
-        </section>
-        <footer>
-            <p>Projeto 7C0, Copyright &copy; 2019</p>
-        </footer>
-    </body>
+        </div>
+        </aside>
+        </div>
+    </section>
+    <section id="newsletter">
+        <div class="container">
+            <h1>Receba Nossa Newsletter</h1>
+            <!--
+                <form action="process.php">                
+            -->
+            <form>
+                <!-- Trocar essa tag pela tag acima quando estiver implementada -->
+
+                <input type="email" onclick="myAlert()" placeholder="Digite seu e-mail...">
+                <button class="button_1" type="submit" onclick="myAlert()">Inscreva-se</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <p>Projeto 7C0, Copyright &copy; 2019</p>
+    </footer>
+</body>
+
 </html>
 
 <!-- Browser Sync -->
@@ -93,4 +103,3 @@
     You can sync this code using VSCode Browser Sync by typing "Server mode in browser" and then
     chosing the following files to be sync "*.html|./css/*.css".
 -->
-
