@@ -3,7 +3,7 @@
 /* --------------- Global --------------- */
 
 .container{ /* As "container" is a class we use the dot before the word "container". */
-    width: 80%; /* We're setting the width as a percentage in order to make the page responsive. */
+    width: 80%; /* We're setting the width as a percentage in order to improve the page responsiveness. */
     margin: auto; 
     overflow: hidden; /* When the screen get resized we won't see a scroolbar. */
 }
@@ -48,7 +48,7 @@ header a{ /* CSS for the header links. */
 }
 
 header li{
-    float: left;
+    /* float: left; */ /* This atribute does not work with display:inline */
     display: inline;
     padding: 0 20px 0 20px; /*Top, right, bottom, left. */
 }
@@ -168,14 +168,14 @@ article#main-col{
 
 aside#sidebar{
     float: right;
-    width: 20%; /* Again, to be responsivem we set a percentage value. */ 
-    margin-top: 10px;
+    width: 20%; /* Again, to be responsive we set a percentage value. */
+    min-width: 200px; /* Set a minimum value for better responsiveness */
+    margin-top: 50px;
 }
 
 aside#sidebar .quote input, aside#sidebar .quote textarea{ /* Note that all input elements are being affected. */
-    width: 95%;/* Again, to be responsivem we set a percentage value. */
-    padding: 5px;
-    
+    width: 95%;/* Again, to be responsive we set a percentage value. */
+    padding: 5px;    
 }
 
 /* --------------- Services --------------- */
@@ -258,15 +258,3 @@ footer{
         margin-bottom: 5px;
     }    
 }
-
-
-
-
-
-
-
-
-
-
-
-
