@@ -66,7 +66,7 @@ function validateEmail() {
   }
 
   if (!email.match(/^[A-Za-z\._\-[0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)) {
-    document.getElementById('contact-email').style.backgroundColor = 'Yellow';    
+    document.getElementById('contact-email').style.backgroundColor = 'White';    
     return false;
 
   }
@@ -80,26 +80,26 @@ function validateEmail() {
 // ------------------------------------------------------------------------------
 
 function validateMessage() {
-  var message = document.getElementById('contact-message').value;
+  var message = document.getElementById('contact-comment').value;
   var required = 100;
   var left = required - message.length;
 
   if (message.length == 0) {
-    document.getElementById('contact-message').style.backgroundColor = 'Yellow';
-    producePrompt('Digite uma mensagem.', 'message-error', 'red');
+    document.getElementById('contact-comment').style.backgroundColor = 'Yellow';
+    producePrompt('Digite uma mensagem.', 'comment-error', 'red');
     return false;
   }
 
   if (message.length < required) {
-    document.getElementById('contact-message').style.backgroundColor = 'White';
-    producePrompt(left + ' caracteres restantes.', 'message-error', 'white');
+    document.getElementById('contact-comment').style.backgroundColor = 'White';
+    producePrompt('Caracteres restantes: ' + left + '.', 'comment-error', 'white');
     return true;
   }
 
   if (message.length >= required) {
-    document.getElementById('contact-message').style.backgroundColor = 'White';
-    document.getElementById('contact-message').value = document.getElementById('contact-message').value.substring(0, required);
-    producePrompt('', 'message-error', 'white');
+    document.getElementById('contact-comment').style.backgroundColor = 'White';
+    document.getElementById('contact-comment').value = document.getElementById('contact-comment').value.substring(0, required);
+    producePrompt('', 'comment-error', 'white');
   }
   return true;
 }
@@ -121,13 +121,13 @@ function validateForm() {
         producePrompt('Preenchimento inválido.', 'email-error', 'red');
     }
     if (!validateMessage()){
-      if(document.getElementById('contact-message').value.length == 0)
-        producePrompt('Digite uma mensagem.', 'message-error', 'red');
+      if(document.getElementById('contact-comment').value.length == 0)
+        producePrompt('Digite uma mensagem.', 'comment-error', 'red');
     }    
     
     jsShow('submit-error');
     producePrompt('Corrija os erros antes de enviar.', 'submit-error', 'red');
-    setTimeout(function () { jsHide('submit-error'); }, 2000);
+    setTimeout(function () { jsHide('submit-error'); }, 5000);
     return false;
   }
   else {

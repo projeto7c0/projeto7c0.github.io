@@ -55,7 +55,7 @@
                         <form action="getaquote.php" class="quote"></form>                        
                     -->
                     <form class="quote">
-                        
+
                         <div>
                             <label for="contact-name">Nome</label><br>
                             <input type="text" class="form-control" id="contact-name" name="name" placeholder="Digite seu nome..." onkeyup='validateName()'>
@@ -70,9 +70,9 @@
                         </div>
 
                         <div>
-                            <label for="contactMessage">Mensagem</label><br>
-                            <textarea class="form-control" rows="5" id='contact-message'  name='message'  placeholder="Digite sua mensagem..." onkeyup='validateMessage()'></textarea>
-                            <span class='error-message' id='message-error'></span>                            
+                            <label for="contact-comment">Mensagem</label><br>
+                            <textarea class="form-control" rows="5" id='contact-comment'  name='comment'  placeholder="Digite sua mensagem..." onkeyup='validateMessage()'></textarea>
+                            <span class='error-message' id='comment-error'></span>                            
                         </div>
 
                         <button class="button_1" type="submit" onclick='return validateForm()' >Enviar</button>
