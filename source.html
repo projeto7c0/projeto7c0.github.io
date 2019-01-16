@@ -54,29 +54,46 @@
                     <!--
                         <form action="getaquote.php" class="quote"></form>                        
                     -->
-                    <form action="getaquote.php" class="quote">
+                    <form class="quote">
+                        
                         <div>
-                            <label>Nome</label><br>
-                            <input id="name" name="name" type="text" placeholder="Digite seu nome..." required>
-                        </div>
-                        <div>
-                            <label>E-mail</label><br>
-                            <input id="email" name="email" type="email" placeholder="Digite seu e-mail..." required>
-                        </div>
-                        <div>
-                            <label>Mensagem</label><br>
-                            <textarea id="comment" name="comment" placeholder="Digite sua mensagem..." onKeyDown="charCountUpdate('comment','charCounter');"
-                                onKeyUp="charCountUpdate('comment','charCounter')" rows="5" cols="" required></textarea>
+                            <label for="contact-name">Nome</label><br>
+                            <input type="text" class="form-control" id="contact-name" name="name" placeholder="Digite seu nome..." onkeyup='validateName()'>
                             <br>
-                            <span id=charCounter></span>
+                            <span class='error-message' id='name-error'></span>
                         </div>
-                        <button class="button_1" type="submit" onclick="myAlert()">Enviar</button>
+
+                        <div>
+                            <label for="contact-email">E-mail</label><br>
+                            <input type="email" class="form-control" id="contact-email" name="email" placeholder="Digite seu e-mail..." onkeyup='validateEmail()'>
+                            <span class='error-message' id='email-error'></span>
+                        </div>
+
+                        <div>
+                            <label for="contactMessage">Mensagem</label><br>
+                            <textarea class="form-control" rows="5" id='contact-message'  name='message'  placeholder="Digite sua mensagem..." onkeyup='validateMessage()'></textarea>
+                            <span class='error-message' id='message-error'></span>                            
+                        </div>
+
+                        <button class="button_1" type="submit" onclick='return validateForm()' >Enviar</button>
+                        <br>
+                        <span class='error-message' id='submit-error'></span>
+
                     </form>
                 </div>
             </aside>
         </div>
         </div>
     </section>
+
+
+
+
+
+
+
+
+
     <section id="newsletter">
         <div class="container">
             <h1>Receba Nossa Newsletter</h1>
