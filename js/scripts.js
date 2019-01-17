@@ -34,14 +34,14 @@ function validateName() {
   var name = document.getElementById('contact-name').value;
 
   if (name.length == 0) {
-    document.getElementById('contact-name').style.backgroundColor = 'Yellow';
+    document.getElementById('contact-name').style.backgroundColor = 'lightyellow';
     producePrompt('Digite seu nome e sobrenome.', 'name-error', 'red');
     return false;
 
   }
   // It is necessary the name (at least 2 letters) and surname (at least 2 letter) and only one space between
   if (!name.match(/^[A-ZÀ-Ÿ][A-zÀ-ÿ']+\s([A-zÀ-ÿ']\s?)*[A-ZÀ-Ÿ][A-zÀ-ÿ']+$/)) {
-    document.getElementById('contact-name').style.backgroundColor = 'Yellow';    
+    document.getElementById('contact-name').style.backgroundColor = 'lightyellow';    
     return false;
 
   }
@@ -59,14 +59,14 @@ function validateEmail() {
   var email = document.getElementById('contact-email').value;
 
   if (email.length == 0) {
-    document.getElementById('contact-email').style.backgroundColor = 'Yellow';
+    document.getElementById('contact-email').style.backgroundColor = 'lightyellow';
     producePrompt('Digite seu e-mail.', 'email-error', 'red');
     return false;
 
   }
 
   if (!email.match(/^[A-Za-z\._\-[0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)) {
-    document.getElementById('contact-email').style.backgroundColor = 'White';    
+    document.getElementById('contact-email').style.backgroundColor = 'lightyellow';    
     return false;
 
   }
@@ -85,7 +85,7 @@ function validateMessage() {
   var left = required - message.length;
 
   if (message.length == 0) {
-    document.getElementById('contact-comment').style.backgroundColor = 'Yellow';
+    document.getElementById('contact-comment').style.backgroundColor = 'lightyellow';
     producePrompt('Digite uma mensagem.', 'comment-error', 'red');
     return false;
   }
