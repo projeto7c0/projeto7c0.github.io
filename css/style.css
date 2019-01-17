@@ -16,10 +16,15 @@ ul{
 .button_1{
     height: 38px;
     background: #000000; 
-    border: #808080 3px solid;
+    border: #2c2b29 2px solid;
     padding-left: 20px;
     padding-right: 20px;
     color: #ffffff;
+}
+
+.button_1:hover {
+    border: white 2px solid;    
+	cursor: pointer;
 }
 
 .dark{
@@ -110,25 +115,20 @@ body{
 /* --------------- Newsletter --------------- */ 
 
 #newsletter{
-    margin-top: 20px;
-    padding: 15px;
+    margin-top: 20px;    
     color: #ffffff;
     background: #808080;
 }
 
-#newsletter h1{    
-    float: left;
+#newsletter h1{
+    margin-right: 20px;  
 }
 
-#newsletter form{
-    float: right;
-    margin-top: 15px;
-}
-
-#newsletter input[type="email"]{
-    padding: 4px;
-    height: 25px;
-    width: 250px;
+#newsletter .container{
+    display: flex;
+    flex-direction: row; /* Coloca os elementos dispostos em linhas ou colunas */
+    justify-content: center; /* Centraliza tudo centro do container */
+    align-items: center;
 }
 
 /* --------------- Boxes --------------- */
@@ -246,15 +246,21 @@ footer{
     #boxes div.box img {
         width: 100%;
         height: auto;
+    }   
+    
+    #newsletter .container {
+        display: flex;
+        flex-direction: column; /* Coloca os elementos dispostos em linhas ou colunas */
+        justify-content: center; /* Centraliza tudo centro do container */
+        align-items: center;
     }    
 
-    #newsletter button, .quote button{
-        display: block;
+    #newsletter .quote button{
         width: 100%;
-    }
+    }  
 
-    #newsletter form input[type="email"], .quote input, .quote textarea{
-        width: 100%;
-        margin-bottom: 5px;
-    }    
+    #newsletter .button_1{
+        margin-bottom: 10px;
+        width: 45%;
+    } 
 }

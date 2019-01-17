@@ -13,6 +13,7 @@
 </head>
 
 <body>
+
     <header>
         <div class="container">
             <div id="branding">
@@ -29,6 +30,7 @@
             </nav>
         </div>
     </header>
+
     <section id="main">
         <div class="container">
             <article id="main-col">
@@ -58,24 +60,27 @@
 
                         <div>
                             <label for="contact-name">Nome</label><br>
-                            <input type="text" class="form-control" id="contact-name" name="name" placeholder="Digite seu nome..." onkeyup='validateName()'>
+                            <input type="text" class="form-control" id="contact-name" name="name" placeholder="Digite seu nome..."
+                                onkeyup='validateName()'>
                             <br>
                             <span class='error-message' id='name-error'></span>
                         </div>
 
                         <div>
                             <label for="contact-email">E-mail</label><br>
-                            <input type="email" class="form-control" id="contact-email" name="email" placeholder="Digite seu e-mail..." onkeyup='validateEmail()'>
+                            <input type="email" class="form-control" id="contact-email" name="email" placeholder="Digite seu e-mail..."
+                                onkeyup='validateEmail()'>
                             <span class='error-message' id='email-error'></span>
                         </div>
 
                         <div>
                             <label for="contact-comment">Mensagem</label><br>
-                            <textarea class="form-control" rows="5" id='contact-comment'  name='comment'  placeholder="Digite sua mensagem..." onkeyup='validateMessage()'></textarea>
-                            <span class='error-message' id='comment-error'></span>                            
+                            <textarea class="form-control" rows="5" id='contact-comment' name='comment' placeholder="Digite sua mensagem..."
+                                onkeyup='validateMessage()'></textarea>
+                            <span class='error-message' id='comment-error'></span>
                         </div>
 
-                        <button class="button_1" type="submit" onclick='return validateForm()' >Enviar</button>
+                        <button class="button_1" type="submit" onclick='return validateForm()'>Enviar</button>
                         <br>
                         <span class='error-message' id='submit-error'></span>
 
@@ -86,31 +91,21 @@
         </div>
     </section>
 
-
-
-
-
-
-
-
-
     <section id="newsletter">
         <div class="container">
-            <h1>Receba Nossa Newsletter</h1>
-            <!--
-                <form action="process.php">                
-            -->
-            <form>
-                <!-- Trocar essa tag pela tag acima quando estiver implementada -->
 
-                <input type="email" onclick="myAlert()" placeholder="Digite seu e-mail...">
-                <button class="button_1" type="submit" onclick="myAlert()">Inscreva-se</button>
+            <h1>Receba Nossa Newsletter</h1>
+            <form action="https://projeto7c0.us20.list-manage.com/subscribe/post?u=984470f280d60b82c247e3d7b&amp;id=00a31b0d4a"
+                method="post" target="_blank" novalidate>
+                <input class="button_1" type="submit" value="Inscreva-se" name="subscribe">
             </form>
         </div>
     </section>
+
     <footer>
         <p>Projeto 7C0, Copyright &copy; 2019</p>
     </footer>
+
 </body>
 
 </html>
