@@ -14,7 +14,7 @@
         <header>
             <div class="container">
                 <div id="branding">
-                    <h1>Projeto 7C0</h1>
+                    <h1>Projeto 7C0 | Sobre o projeto</h1>
                 </div>
                 <nav>
                     <ul>
@@ -28,28 +28,68 @@
         <section id="main">
             <div class="container">
                 <article id="main-col">
-                    <h1 class="page-title">Sobre o Projeto 7C0</h1>
-                    <p>
-                            Projeto em código aberto que tem por objetivo criar mecanismos para garantir que postagens realizadas por um ator político em um ambiente público como o Twitter sejam arquivadas e recuperadas caso o ator político as delete em seu perfil.
-                    </p>
-                    <p>
-                            O projeto não recebe nenhum financiamento, sendo mantido por enquanto pelos seus desenvolvedores.
-                    </p>
+					<p>&nbsp</p>
+					<p>As redes sociais são cada vez mais usadas por atores políticos no mundo todo. Segundo o estudo Twiplomacy 2018, 
+					97% dos países membros da ONU possuem uma representação oficial no Twitter, e no Brasil sabemos que pelo menos 439 
+					atores políticos utilizam o Twitter.</p>
+					<p>Esses dados são relevantes, pois o Twitter se tornou uma plataforma de comunicação direta entre os políticos e 
+					os cidadãos, e de debate entre os próprios políticos. Essa plataforma porém, permite que seus usuários removam postagens 
+					realizadas em qualquer tempo sem deixar qualquer registro dessa remoção. </p>
+					<p>Ao contrário dos particulares, esses atores políticos estão cumprindo mandatos ou são nomeados para cargos de governo, 
+					e portanto deveriam ter seu discurso pautado pelos princípios da administração pública. Um desses princípios, o da publicidade, 
+					é contrário a possibilidade de remover conteúdos.</p>
+					<p>A partir disso nasceu o projeto 7c0, com o objetivo de criar mecanismos para garantir que postagens realizadas por um 
+					ator político em um ambiente público como o Twitter sejam arquivadas e recuperadas caso sejam deletadas.</p>
+					<p>Como existe uma confusão entre as postagens do particular e do ator político, o projeto 7c0 considera que todo o 
+					conteúdo da conta representa a atuação política daquela pessoa a partir do momento que ela assume o cargo.</p>
+					<p>O projeto 7c0 é desenvolvido em código aberto e está hospedado na Amazon Web Services. O projeto ainda não recebe financiamento, 
+					sendo mantido por enquanto pelos seus desenvolvedores.</p>
                 </article>
-                <aside id="sidebar">
-                    <div class="dark">
-                            <p>
-                                Recuperar postagens apagadas por atores políticos, permitindo o acesso ao histórico do discurso deles na rede social. 
-                            </p>                                
-                    </div>
-                </aside>                
+            <aside id="sidebar">
+                <div class="dark">
+                    <h3>Entre em contato conosco</h3>
+                    <!--
+                        <form action="getaquote.php" class="quote"></form>                        
+                    -->
+                    <form class="quote" action="https://formspree.io/bigbrother@projeto7c0.com.br" method="POST">
+
+                        <div>
+                            <label for="contact-name">Nome</label><br>
+                            <input type="text" class="form-control" id="contact-name" name="name" placeholder="Digite seu nome..."
+                                onkeyup='validateName()'>
+                            <br>
+                            <span class='error-message' id='name-error'></span>
+                        </div>
+
+                        <div>
+                            <label for="contact-email">E-mail</label><br>
+                            <input type="email" class="form-control" id="contact-email" name="email" placeholder="Digite seu e-mail..."
+                                onkeyup='validateEmail()'>
+                            <span class='error-message' id='email-error'></span>
+                        </div>
+
+                        <div>
+                            <label for="contact-comment">Mensagem</label><br>
+                            <textarea class="form-control" rows="5" id='contact-comment' name='comment' placeholder="Digite sua mensagem..."
+                                onkeyup='validateMessage()'></textarea>
+                            <span class='error-message' id='comment-error'></span>
+                        </div>
+
+                        <button class="button_1" type="submit" onclick='return validateForm()'>Enviar</button>
+                        <br>
+                        <span class='error-message' id='submit-error'></span>
+
+                    </form>
+                </div>
+            </aside>
+    
             </div>
         </section>
 		
-		    <section id="newsletter">
+    <section id="newsletter">
         <div class="container">
 
-            <h1>Receba atualizações do projeto</h1>
+            <h3>Receba atualizações do projeto &nbsp;</h3>
             <form action="https://projeto7c0.us20.list-manage.com/subscribe/post?u=984470f280d60b82c247e3d7b&amp;id=00a31b0d4a"
                 method="post" target="_blank" novalidate>
                 <input class="button_1" type="submit" value="Inscreva-se" name="subscribe">
