@@ -100,7 +100,7 @@ body{
 }
 
 #showcase .eye_container{ /* As "container" is a class we use the dot before the word "container". */
-    width: 35%; /* We're setting the width as a percentage in order to make the page responsive. */
+    width: 60%; /* We're setting the width as a percentage in order to make the page responsive. */
     margin: auto; 
     overflow: hidden; /* When the screen get resized we won't see a scroolbar. */    
 }
