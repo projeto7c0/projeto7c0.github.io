@@ -223,6 +223,17 @@ footer{
 
 .first-column {
 	width: 40%;
+}	
+
+/* ---------------- tabelas zebradas ------- */
+
+.zebra-odd	 {
+    background: #d6d6d6;
+}
+.zebra-even	 {
+	background: #e6e6e6;
+}
+
 /* --------------- Media Queries --------------- */ 
 /* Code to make the page adapt dependin on the device screen. */
 
