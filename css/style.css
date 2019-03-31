@@ -103,7 +103,7 @@ body{
     width: 60%; /* We're setting the width as a percentage in order to make the page responsive. */
     margin: auto; 
     overflow: hidden; /* When the screen get resized we won't see a scroolbar. */    
-	background: #ffc823;
+	background: #ffffff;
 }
 
 .eye_phrase {
