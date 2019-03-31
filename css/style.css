@@ -177,6 +177,11 @@ article#main-col{
     width: 65%;
 }
 
+article#main-col-single{
+    float: left;
+    width: 90%;
+}
+
 /* --------------- Sidebar --------------- */
 
 aside#sidebar{
@@ -210,6 +215,12 @@ footer{
     background-color: #000000; 
     text-align: center;
 }
+
+/* ---------- colunas -------- */
+.columns {
+	column-count: 4;
+}
+
 
 /* --------------- Media Queries --------------- */ 
 /* Code to make the page adapt dependin on the device screen. */
