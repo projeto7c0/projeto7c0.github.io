@@ -71,6 +71,14 @@ header nav{
     margin-top: 10px;
 }
 
+.tweet {
+	float: left;
+	    text-align: center;
+
+    margin-top: 10px;
+	width:40%
+}
+
 header .highlight, header .current a{
     color: #808080; /* #35424a */
     font-weight: bold;
