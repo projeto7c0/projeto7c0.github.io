@@ -73,13 +73,9 @@ header nav{
 
 .tweet {
 	float: left;
-	width:30%;
-	margin-top: 20px;
-	margin-bottom: 20px;
-}
-
-.tweet-button {
-	vertical-align: middle !important;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	margin-right: 30px;
 }
 
 header .highlight, header .current a{
