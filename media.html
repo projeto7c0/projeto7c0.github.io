@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Website do Projeto 7C0.">
+    <meta name="keywords" content="Projeto 7C0, monitoramento, políticos, atores públicos">
+    <link rel="icon" type="image/x-icon" href="./img/eye.ico" />
+    <title>Projeto 7C0 | Código-Fonte</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script type="text/javascript" src="./js/scripts.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1>
+                    Projeto 7C0 | Na mídia
+                </h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">Sobre</a></li>
+                    <li><a href="source.html">Código-Fonte</a></li>
+					<li class="current"><a href="media.html">Na mídia</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="main">
+        <div class="container">
+            <article id="main-col">
+				<p>&nbsp;</p>
+                <ul id="services">
+                    <li>
+                        <h3>G1 Tecnologia</h3>
+						<p>Regras do Twitter afetam robôs que monitoram políticos e órgãos públicos</p>
+						<p>Contas têm sido vistas como spam pela rede social, que aumentou a vigilância sobre perfis que fazem postagens automáticas. </p>
+						<p>publicado <a href="https://g1.globo.com/economia/tecnologia/noticia/2019/03/01/regras-do-twitter-afetam-robos-que-monitoram-politicos-e-orgaos-publicos.ghtml">aqui</a> em: 01/03/2019 </p>
+                    </li>
+                    <li>
+                        <h3>Memorial do Consumo ESPM | Twitter para vigilância eleitoral?</h3>
+                        <p>Twitter para vigilância eleitoral?</p>
+						<p>publicado <a href="http://memorialdoconsumo.espm.br/2019/05/22/twitter-para-vigilancia-eleitoral/">aqui</a> em: 22/05/2019 </p>
+                    </li>
+                </ul>
+            </article>
+            <aside id="sidebar">
+                <div class="dark">
+                    <h3>Entre em contato conosco</h3>
+                    <!--
+                        <form action="getaquote.php" class="quote"></form>                        
+                    -->
+                    <form class="quote" action="https://formspree.io/bigbrother@projeto7c0.com.br" method="POST">
+
+                        <div>
+                            <label for="contact-name">Nome</label><br>
+                            <input type="text" class="form-control" id="contact-name" name="name" placeholder="Digite seu nome..."
+                                onkeyup='validateName()'>
+                            <br>
+                            <span class='error-message' id='name-error'></span>
+                        </div>
+
+                        <div>
+                            <label for="contact-email">E-mail</label><br>
+                            <input type="email" class="form-control" id="contact-email" name="email" placeholder="Digite seu e-mail..."
+                                onkeyup='validateEmail()'>
+                            <span class='error-message' id='email-error'></span>
+                        </div>
+
+                        <div>
+                            <label for="contact-comment">Mensagem</label><br>
+                            <textarea class="form-control" rows="5" id='contact-comment' name='comment' placeholder="Digite sua mensagem..."
+                                onkeyup='validateMessage()'></textarea>
+                            <span class='error-message' id='comment-error'></span>
+                        </div>
+
+                        <button class="button_1" type="submit" onclick='return validateForm()'>Enviar</button>
+                        <br>
+                        <span class='error-message' id='submit-error'></span>
+
+                    </form>
+                </div>
+            </aside>
+        </div>
+        </div>
+    </section>
+
+    <section id="newsletter">
+        <div class="container">
+
+            <h3>Receba atualizações do projeto &nbsp;</h3>
+            <form action="https://projeto7c0.us20.list-manage.com/subscribe/post?u=984470f280d60b82c247e3d7b&amp;id=00a31b0d4a"
+                method="post" target="_blank" novalidate>
+                <input class="button_1" type="submit" value="Inscreva-se" name="subscribe">
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>Projeto 7C0, Copyright &copy; 2019</p>
+    </footer>
+
+</body>
+
+</html>
+
+<!-- Browser Sync -->
+<!-- 
+    You can sync this code using VSCode Browser Sync by typing "Server mode in browser" and then
+    chosing the following files to be sync "*.html|./css/*.css".
+-->
