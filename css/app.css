@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,700&display=swap');
+
+body {
+    margin: 0;
+    padding: 2%;
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #f4f4f4;
+}
+.bd {
+    margin: 0 1em;
+}
+
+a{
+  color: #ADBD30;
+}
+a:hover {
+  color: #999999;
+}
+
+table {
+    border-collapse: collapse;
+}
+td {
+    border-top: 1px solid #aaa;
+    border-right: 1px solid #eee;
+    padding: 4px;
+    vertical-align: top;
+    font-size: 0.7em;
+}
+td.col-link {
+    font-weight: bold;
+}
+td em {
+    font-style: normal;
+    font-size: 0.7em;
+    color: #aaa;
+}
+th {
+    padding: 4px;
+    padding-right: 1em;
+    border-top: 1px solid #aaa;
+}
+table a:link {
+    text-decoration: none;
+    color: #241F21;
+}
+table a:visited {
+    color: #777777;
+}
+.small-screen-only,
+.select-wrapper.small-screen-only {
+    display: none;
+}
+@media only screen and (max-width: 576px) {
+    .small-screen-only {
+        display: initial;
+    }
+    /* Force table to not be like tables anymore */
+    table.rows-and-columns,
+    .rows-and-columns thead,
+    .rows-and-columns tbody,
+    .rows-and-columns th,
+    .rows-and-columns td,
+    .rows-and-columns tr {
+        display: block;
+    }
+
+    /* Hide table headers (but not display: none;, for accessibility) */
+    .rows-and-columns thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    .rows-and-columns tr {
+        border: 1px solid #ccc;
+        margin-bottom: 1em;
+    }
+
+    .rows-and-columns td {
+        /* Behave  like a "row" */
+        border: none;
+        border-bottom: 1px solid #eee;
+        padding: 0;
+        padding-left: 10%;
+    }
+
+    .rows-and-columns td:before {
+        display: block;
+        margin-left: -10%;
+        font-size: 0.8em;
+    }
+}
+
+.hd {
+    border-bottom: 2px solid #ccc;
+    padding: 0.2em 1em;
+    background-color: #eee;
+    overflow: hidden;
+    box-sizing: border-box;
+    min-height: 2rem;
+}
+.hd p {
+    margin: 0;
+    padding: 0;
+}
+.hd .crumbs {
+    float: left;
+}
+.ft {
+    margin: 1em 0;
+    padding: 0.5em 1em 0 1em;
+    border-top: 1px solid #ccc;
+    font-size: 0.8em;
+}
+.hd :link {
+    text-decoration: none;
+}
+
+.db-table p {
+    margin-top: 0;
+    margin-bottom: 0.3em;
+}
+.db-table h2 {
+    margin-top: 1em;
+    margin-bottom: 0;
+}
+
+h2 em {
+    font-style: normal;
+    font-weight: lighter;
+}
+.extra-wheres ul, .extra-wheres li {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+form.sql textarea {
+    border: 1px solid #ccc;
+    width: 70%;
+    height: 3em;
+    padding: 4px;
+    font-family: monospace;
+    font-size: 1.3em;
+}
+form label {
+    font-weight: bold;
+    display: inline-block;
+    width: 15%;
+}
+.advanced-export form label {
+    width: auto;
+}
+.advanced-export input[type=submit] {
+    font-size: 0.6em;
+    margin-left: 1em;
+}
+label.sort_by_desc {
+    width: auto;
+    padding-right: 1em;
+}
+form input[type=text],
+form input[type=search] {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    width: 60%;
+    padding: 9px 4px;
+    display: inline-block;
+    font-size: 1em;
+    font-family: "Roboto", sans-serif;
+}
+@media only screen and (max-width: 576px) {
+    form.sql textarea {
+        width: 95%;
+    }
+}
+form input[type=submit] {
+    color: #fff;
+    background-color: #241F21;
+    border-color: #ADBD30;
+    font-weight: 400;
+    cursor: pointer;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #ADBD30;
+    padding: .5em 0.8em;
+    font-size: 0.9rem;
+    line-height: 1;
+    border-radius: .25rem;
+    -webkit-appearance: button;
+}
+
+.filter-row {
+    margin-bottom: 0.6em;
+}
+.search-row {
+    margin-bottom: 1.8em;
+}
+
+.search-row label {
+    font-size: 1.2em;
+    padding-right: 0.5em;
+    display: inline-block;
+    width: 80px;
+}
+
+.select-wrapper {
+    border: 1px solid #ccc;
+    width: 120px;
+    border-radius: 3px;
+    padding: 0;
+    background-color: #fafafa;
+    position: relative;
+    display: inline-block;
+    margin-right: 0.3em;
+}
+.select-wrapper.filter-op {
+    width: 80px;
+}
+.select-wrapper::after {
+    content: "\25BE";
+    position: absolute;
+    top: 0px;
+    right: 0.4em;
+    color: #bbb;
+    pointer-events: none;
+    font-size: 1.2em;
+    padding-top: 0.16em;
+}
+
+.select-wrapper select {
+    padding: 9px 8px;
+    width: 100%;
+    border: none;
+    box-shadow: none;
+    background: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+}
+.select-wrapper select {
+    font-size: 1em;
+    font-family: "Roboto", sans-serif;
+}
+.select-wrapper option {
+    font-size: 1em;
+    font-family: "Roboto", sans-serif;
+}
+
+.select-wrapper select:focus {
+    outline: none;
+}
+.filters {
+    font-size: 0.8em;
+}
+.filters input.filter-value {
+    width: 200px;
+    border-radius: 3px;
+    -webkit-appearance: none;
+    padding: 9px 4px;
+    font-size: 1em;
+    font-family: "Roboto", sans-serif;
+}
+@media only screen and (max-width: 576px) {
+    .select-wrapper.small-screen-only {
+        display: inline-block;
+    }
+    .select-wrapper {
+        width: 100px;
+    }
+    .select-wrapper.filter-op {
+        width: 60px;
+    }
+    .filters input.filter-value {
+        width: 140px;
+    }
+}
+
+a.not-underlined {
+    text-decoration: none;
+}
+.not-underlined .underlined {
+    text-decoration: underline;
+}
+
+.facet-results {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.facet-info {
+    width: 250px;
+    margin-right: 15px;
+}
+.facet-info li,
+.facet-info ul {
+    margin: 0;
+    padding: 0;
+}
+.facet-info ul {
+    padding-left: 1.25em;
+    margin-bottom: 1em;
+}
+.facet-info a.cross:link,
+.facet-info a.cross:visited,
+.facet-info a.cross:hover,
+.facet-info a.cross:focus,
+.facet-info a.cross:active {
+    text-decoration: none;
+}
+.advanced-export {
+    margin-top: 1em;
+    padding: 0.01em 2em 0.01em 1em;
+    width: auto;
+    display: inline-block;
+    box-shadow: 1px 2px 8px 2px rgba(0,0,0,0.08);
+}
+
+.download-sqlite em {
+    font-style: normal;
+    font-size: 0.8em;
+}
+
+pre.wrapped-sql {
+    white-space: pre-wrap;
+}
