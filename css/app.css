@@ -104,19 +104,33 @@ table a:visited {
     box-sizing: border-box;
     min-height: 2rem;
 }
+
 .hd p {
     margin: 0;
     padding: 0;
 }
+
+.hd a {
+    padding: 0.4%;
+}
+
 .hd .crumbs {
     float: left;
 }
+
+.crumbs:hover {
+    border-radius: 5px;
+    color: #ADBD30;
+    background-color: #e9e9e9;
+}
+
 .ft {
     margin: 1em 0;
     padding: 0.5em 1em 0 1em;
     border-top: 1px solid #ccc;
     font-size: 0.8em;
 }
+
 .hd :link {
     text-decoration: none;
 }
