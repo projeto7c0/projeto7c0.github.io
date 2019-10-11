@@ -192,9 +192,10 @@ form input[type=search] {
         width: 95%;
     }
 }
+
 form input[type=submit] {
-    color: #fff;
-    background-color: #241F21;
+    color: #000;
+    background-color: #fff;
     border-color: #ADBD30;
     font-weight: 400;
     cursor: pointer;
@@ -206,6 +207,11 @@ form input[type=submit] {
     line-height: 1;
     border-radius: .25rem;
     -webkit-appearance: button;
+}
+
+form input[type=submit]:hover {
+    color: #fff;
+    background-color: #241F21;
 }
 
 .filter-row {
