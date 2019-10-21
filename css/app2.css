@@ -726,8 +726,11 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
     color: #FFF;
     text-shadow: 0 0px 5px rgba(0, 0, 0);
     text-align: center;
-    margin-top: 50px;
-    
+    margin-top: 50px;   
+}
+
+.motto {
+ position: relative; 
 }
 .main .subscribe .info-text{
     font-size: 18px;
