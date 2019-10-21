@@ -720,7 +720,7 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
     z-index: 4;
 }
 .main .motto{
-    min-height: 140px;
+    min-height: 10rem;
 }
 .main .motto, .main .subscribe .info-text{
     font-size: 1.5em;
