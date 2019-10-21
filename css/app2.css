@@ -705,7 +705,7 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
     font-weight: 300;
     position: relative;
     text-align: center;
-    text-shadow: 0 0 10px rgba(0, 0, 0);
+    text-shadow: 0 0 6px rgba(0, 0, 0);
     margin-top: 100px;
     z-index: 3;
 }
@@ -724,7 +724,7 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
 .main .motto, .main .subscribe .info-text{
     font-size: 1.5em;
     color: #FFF;
-    text-shadow: 0 1px 4px rgba(0, 0, 0);
+    text-shadow: 0 0px 5px rgba(0, 0, 0);
     text-align: center;
     margin-top: 50px;
     
