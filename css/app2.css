@@ -760,13 +760,12 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
 }
 
 .footer{
-    bottom: 20px;
     width: 100%;
     color: #FFF;
     z-index: 4;
     text-align: left;
     margin-top: 50px;
-    left: 5%;
+    left: 2%;
     position: relative;
     bottom: 20px;
 }
