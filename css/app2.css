@@ -1,5 +1,6 @@
 body{
-    
+  background: radial-gradient(#ADBC30 1%, #fff 20%);
+  background-size: 8px 8px; 
 }
 .form-control::-moz-placeholder{
    color: #DDDDDD;
@@ -15,12 +16,15 @@ body{
 } 
 .form-control:-ms-input-placeholder{
    color: #DDDDDD;
-   opacity: 1; 
-a{
+   opacity: 1;
+}
+
+a {
     color: #2C93FF;
 }
 a:hover, a:focus {
     color: #1084FF;
+    text-decoration: none;
 }
 a:focus, a:active, 
 button::-moz-focus-inner,
@@ -696,12 +700,12 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
     width: 60px
 }
 .main .logo{
-    color: #FFFFFF;
+    color: #fff;
     font-size: 3em;
     font-weight: 300;
     position: relative;
     text-align: center;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.33);
+    text-shadow: 0 0 10px rgba(0, 0, 0);
     margin-top: 100px;
     z-index: 3;
 }
@@ -719,8 +723,8 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
 }
 .main .motto, .main .subscribe .info-text{
     font-size: 1.5em;
-    color: #FFFFFF;
-    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.33);
+    color: #FFF;
+    text-shadow: 0 1px 4px rgba(0, 0, 0);
     text-align: center;
     margin-top: 50px;
     
@@ -758,18 +762,33 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
 .footer{
     position: relative;
     bottom: 20px;
-    right: 0px;
-    left: 5%;
     width: 100%;
-    color: #FFFFFF;
+    color: #FFF;
     z-index: 4;
     text-align: left;
     margin-top: 50px;
+    left: 5%;
+    position: fixed;
+    bottom: 20px;
 }
 .footer a{
     color: #ADBC30;
     font-size: 1.3em;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0);
+    text-decoration: none;
 }
+
+.footer img{
+    float: right;
+    height: 30rem;
+    position: fixed;
+}
+
+.footer p{
+    color: #FFF;
+    text-shadow: 0 1px 4px rgba(0, 0, 0);
+}
+
 .footer .heart{
     color: #FF3B30;
 }
@@ -790,10 +809,6 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
 @media (min-width:991px){        
     .main .subscribe .form-group{
         width: 190px;
-    }   
-    .footer{
-        position: fixed;
-        bottom: 20px;
     }
 }
 @media (min-width:1200px){        
