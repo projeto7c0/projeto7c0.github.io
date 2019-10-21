@@ -767,7 +767,7 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
     text-align: left;
     margin-top: 50px;
     left: 5%;
-    position: fixed;
+    position: relative;
     bottom: 20px;
 }
 .footer a{
