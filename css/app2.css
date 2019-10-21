@@ -20,10 +20,10 @@ body{
 }
 
 a {
-    color: #2C93FF;
+    color: #ADBC30;
 }
 a:hover, a:focus {
-    color: #1084FF;
+    color: #6e7723;
     text-decoration: none;
 }
 a:focus, a:active, 
