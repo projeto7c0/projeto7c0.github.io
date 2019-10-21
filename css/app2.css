@@ -644,7 +644,6 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
     left: 0;
     min-height: 100%;
     min-width: 100%;
-    position: fixed;
     top: 0;
     width: auto;
 }
