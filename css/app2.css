@@ -736,6 +736,15 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
     font-size: 18px;
     margin-bottom: 30px;
 }
+
+.image {
+  position:absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  opacity: 0.3;
+}
+
 #video_background {
     position: fixed;
     top: 0px;
