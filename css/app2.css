@@ -785,6 +785,11 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
     position: fixed;
 }
 
+.footer:hover, .footer:focus {
+    color: #6e7723;
+    text-decoration: none;
+}
+
 .footer p{
     color: #FFF;
     text-shadow: 0 1px 4px rgba(0, 0, 0);
