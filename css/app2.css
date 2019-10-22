@@ -978,11 +978,11 @@ form input[type=submit]:hover {
 }
 
 thead {
-        background-color: #e8e8e8;
+        background-color: #ADBC30;
 }
 
 tr:nth-child(even) {
-  background: #CCC;
+  background: #e8e8e8;
 }
 
 table {
