@@ -985,10 +985,6 @@ tr:nth-child(even) {
   background: #CCC;
 }
 
-tr:nth-child(odd) {
-  background: #000;
-}
-
 table {
     border-collapse: collapse;
 }
