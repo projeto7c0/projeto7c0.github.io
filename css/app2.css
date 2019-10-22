@@ -838,7 +838,7 @@ form input[type=submit] {
     padding: .5em 0.8em;
     font-size: 1.5rem;
     line-height: 1;
-    border-radius: .25rem;
+    border-radius: 0.5rem;
     -webkit-appearance: button;
 }
 
