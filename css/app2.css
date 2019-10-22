@@ -823,7 +823,7 @@ form.sql textarea {
     height: 3em;
     padding: 4px;
     font-family: monospace;
-    font-size: 1.3em;
+    font-size: 1em;
 }
 
 @media only screen and (max-width: 576px) {
