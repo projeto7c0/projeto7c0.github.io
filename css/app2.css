@@ -978,7 +978,8 @@ form input[type=submit]:hover {
 }
 
 thead {
-        background-color: #ADBC30;
+  background-color: #FFF;
+  color: #ADBC30;
 }
 
 tr:nth-child(even) {
