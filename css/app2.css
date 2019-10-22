@@ -809,7 +809,7 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
 
 .crumbs {
     margin-left: 3rem;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
 }
 
 .footer a:hover, .footer a:focus {
