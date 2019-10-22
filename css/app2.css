@@ -839,6 +839,12 @@ form.sql textarea {
 
 pre.wrapped-sql {
     white-space: pre-wrap;
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
 }
 
 .advanced-export input[type=submit] {
