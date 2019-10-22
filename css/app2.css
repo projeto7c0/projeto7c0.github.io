@@ -988,7 +988,6 @@ tr:nth-child(even) {
 
 table {
     border-collapse: collapse;
-    overflow-x: auto !important;
 }
 td {
     border-top: 1px solid #aaa;
