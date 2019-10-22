@@ -810,6 +810,45 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
     text-decoration: none;
 }
 
+.advanced-export input[type=submit] {
+    font-size: 0.6em;
+    margin-left: 1em;
+}
+
+form input[type=text],
+form input[type=search] {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    width: 60%;
+    padding: 9px 4px;
+    display: inline-block;
+    font-size: 1em;
+    font-family: "Roboto", sans-serif;
+}
+
+form input[type=submit] {
+    color: #000;
+    background-color: #fff;
+    border-color: #ADBD30;
+    font-weight: 400;
+    cursor: pointer;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #ADBD30;
+    padding: .5em 0.8em;
+    font-size: 0.9rem;
+    line-height: 1;
+    border-radius: .25rem;
+    -webkit-appearance: button;
+}
+
+form input[type=submit]:hover {
+    color: #fff;
+    background-color: #241F21;
+}
+
+
+
 @media (min-width:219px){        
     .main .subscribe .form-group{
         width: auto;
