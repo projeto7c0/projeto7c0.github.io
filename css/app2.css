@@ -817,6 +817,30 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
     text-decoration: none;
 }
 
+form.sql textarea {
+    border: 1px solid #ccc;
+    width: 70%;
+    height: 3em;
+    padding: 4px;
+    font-family: monospace;
+    font-size: 1.3em;
+}
+
+@media only screen and (max-width: 576px) {
+    form.sql textarea {
+        width: 95%;
+    }
+}
+
+.download-sqlite em {
+    font-style: normal;
+    font-size: 0.8em;
+}
+
+pre.wrapped-sql {
+    white-space: pre-wrap;
+}
+
 .advanced-export input[type=submit] {
     font-size: 0.6em;
     margin-left: 1em;
