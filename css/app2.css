@@ -937,6 +937,78 @@ form input[type=submit]:hover {
 }
 
 @media only screen and (max-width: 576px) {
+    .small-screen-only {
+        display: initial;
+    }
+    /* Force table to not be like tables anymore */
+    table.rows-and-columns,
+    .rows-and-columns thead,
+    .rows-and-columns tbody,
+    .rows-and-columns th,
+    .rows-and-columns td,
+    .rows-and-columns tr {
+        display: block;
+    }
+
+    /* Hide table headers (but not display: none;, for accessibility) */
+    .rows-and-columns thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    .rows-and-columns tr {
+        border: 1px solid #ccc;
+        margin-bottom: 1em;
+    }
+
+    .rows-and-columns td {
+        /* Behave  like a "row" */
+        border: none;
+        border-bottom: 1px solid #eee;
+        padding: 0;
+        padding-left: 10%;
+    }
+
+    .rows-and-columns td:before {
+        display: block;
+        margin-left: -10%;
+        font-size: 0.8em;
+    }
+}
+
+table {
+    border-collapse: collapse;
+}
+td {
+    border-top: 1px solid #aaa;
+    border-right: 1px solid #eee;
+    padding: 4px;
+    vertical-align: top;
+    font-size: 0.7em;
+}
+td.col-link {
+    font-weight: bold;
+}
+td em {
+    font-style: normal;
+    font-size: 0.7em;
+    color: #aaa;
+}
+th {
+    padding: 4px;
+    padding-right: 1em;
+    border-top: 1px solid #aaa;
+}
+table a:link {
+    text-decoration: none;
+    color: #241F21;
+}
+table a:visited {
+    color: #777777;
+}
+
+@media only screen and (max-width: 576px) {
     .select-wrapper.small-screen-only {
         display: inline-block;
     }
