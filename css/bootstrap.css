@@ -1606,6 +1606,7 @@ pre code {
 table {
   max-width: 100%;
   background-color: #fff;
+  overflow-x: auto !important;
 }
 
 th {
