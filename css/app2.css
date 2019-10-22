@@ -939,10 +939,6 @@ form input[type=submit]:hover {
     margin-bottom: 0.6em;
 }
 
-table {
-  overflow-x:auto;
-}
-
 thead {
   background-color: #FFF;
   color: #ADBC30;
