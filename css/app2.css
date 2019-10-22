@@ -777,7 +777,8 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
     z-index: 4;
     text-align: left;
     margin-top: 50px;
-    left: 2%;
+    padding-left: 2rem;
+    padding-right: 2rem;
     position: relative;
     bottom: 20px;
 }
