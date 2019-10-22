@@ -978,7 +978,11 @@ form input[type=submit]:hover {
 }
 
 tr:hover {
-          background-color: #e8e8e8;
+        background-color: #e8e8e8;
+}
+
+thead:hover {
+        background-color: transparent;
 }
 
 table {
