@@ -807,6 +807,11 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
     margin-left: 2rem;
 }
 
+.crumbs {
+    margin-left: 3rem;
+    margin-top: 1rem;
+}
+
 .footer a:hover, .footer a:focus {
     color: #6e7723;
     text-decoration: none;
