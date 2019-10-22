@@ -932,6 +932,10 @@ form input[type=submit]:hover {
     outline: none;
 }
 
+.filter-row {
+    margin-bottom: 0.6em;
+}
+
 @media only screen and (max-width: 576px) {
     .select-wrapper.small-screen-only {
         display: inline-block;
