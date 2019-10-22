@@ -946,9 +946,7 @@ form input[type=submit]:hover {
     .rows-and-columns tbody,
     .rows-and-columns th,
     .rows-and-columns td,
-    .rows-and-columns tr {
-        overflow-x: auto !important;
-    }
+    .rows-and-columns tr {}
 
     /* Hide table headers (but not display: none;, for accessibility) */
     .rows-and-columns thead tr {
