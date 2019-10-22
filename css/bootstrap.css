@@ -736,7 +736,8 @@ code {
 }
 
 pre {
-  max-width: 95vw;
+  padding-left: 2rem;
+  padding-right: 2rem;
   display: block;
   padding: 9.5px;
   margin: 0 0 10px;
