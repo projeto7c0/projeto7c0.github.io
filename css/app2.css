@@ -745,16 +745,6 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
   opacity: 0.3;
 }
 
-.crumbs {
-    float: left;
-}
-
-.crumbs:hover {
-    border-radius: 5px;
-    color: #ADBD30;
-    background-color: #e9e9e9;
-}
-
 #video_background {
     position: fixed;
     top: 0px;
