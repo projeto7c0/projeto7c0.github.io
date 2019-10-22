@@ -946,7 +946,9 @@ form input[type=submit]:hover {
     .rows-and-columns tbody,
     .rows-and-columns th,
     .rows-and-columns td,
-    .rows-and-columns tr {}
+    .rows-and-columns tr {
+        overflow-x: auto !important;
+  }
 
     /* Hide table headers (but not display: none;, for accessibility) */
     .rows-and-columns thead tr {
@@ -969,7 +971,6 @@ form input[type=submit]:hover {
     }
 
     .rows-and-columns td:before {
-        display: block;
         margin-left: -10%;
         font-size: 0.8em;
     }
