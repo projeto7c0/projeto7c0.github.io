@@ -878,7 +878,74 @@ form input[type=submit]:hover {
     background-color: #241F21;
 }
 
+.small-screen-only,
+.select-wrapper.small-screen-only {
+    display: none;
+}
 
+
+.select-wrapper {
+    border: 1px solid #ccc;
+    width: 120px;
+    border-radius: 3px;
+    padding: 0;
+    background-color: #fafafa;
+    position: relative;
+    display: inline-block;
+    margin-right: 0.3em;
+}
+.select-wrapper.filter-op {
+    width: 80px;
+}
+.select-wrapper::after {
+    content: "\25BE";
+    position: absolute;
+    top: 0px;
+    right: 0.4em;
+    color: #bbb;
+    pointer-events: none;
+    font-size: 1.2em;
+    padding-top: 0.16em;
+}
+
+.select-wrapper select {
+    padding: 9px 8px;
+    width: 100%;
+    border: none;
+    box-shadow: none;
+    background: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+}
+.select-wrapper select {
+    font-size: 1em;
+    font-family: "Roboto", sans-serif;
+}
+.select-wrapper option {
+    font-size: 1em;
+    font-family: "Roboto", sans-serif;
+}
+
+.select-wrapper select:focus {
+    outline: none;
+}
+
+@media only screen and (max-width: 576px) {
+    .select-wrapper.small-screen-only {
+        display: inline-block;
+    }
+    .select-wrapper {
+        width: 100px;
+    }
+    .select-wrapper.filter-op {
+        width: 60px;
+    }
+    .filters input.filter-value {
+        width: 140px;
+    }
+}
 
 @media (min-width:219px){        
     .main .subscribe .form-group{
