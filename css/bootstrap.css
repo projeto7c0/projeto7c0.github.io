@@ -735,9 +735,7 @@ code {
   border-radius: 4px;
 }
 
-pre {
-  padding-left: 2rem;
-  padding-right: 2rem;
+/*pre {
   display: block;
   padding: 9.5px;
   margin: 0 0 10px;
@@ -749,7 +747,7 @@ pre {
   background-color: #f5f5f5;
   border: 1px solid #cccccc;
   border-radius: 4px;
-}
+}*/
 
 pre code {
   padding: 0;
