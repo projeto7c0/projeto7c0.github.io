@@ -731,8 +731,8 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
 
 .motto {
  position: relative;
- margin-left: 4rem;
- margin-right: 4rem;
+ margin-left: 2rem;
+ margin-right: 2rem;
 }
 
 .main .subscribe .info-text{
