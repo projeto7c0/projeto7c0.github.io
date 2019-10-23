@@ -743,6 +743,7 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
   top: 0;
   height: 40vh;
   opacity: 0.3;
+  pointer-events: none;
 }
 
 #video_background {
