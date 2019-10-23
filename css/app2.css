@@ -730,8 +730,11 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
 }
 
 .motto {
- position: relative; 
+ position: relative;
+ margin-left: 4rem;
+ margin-right: 4rem;
 }
+
 .main .subscribe .info-text{
     font-size: 18px;
     margin-bottom: 30px;
