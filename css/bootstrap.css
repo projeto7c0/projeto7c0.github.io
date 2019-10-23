@@ -1695,7 +1695,7 @@ table col[class*="col-"] {
 
 table td[class*="col-"],
 table th[class*="col-"] {
-  display: table-cell;
+  word-wrap: break-word;
   float: none;
 }
 
