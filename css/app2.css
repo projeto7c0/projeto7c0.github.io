@@ -837,12 +837,6 @@ form.sql textarea {
     font-size: 1em;
 }
 
-@media only screen and (max-width: 576px) {
-    form.sql textarea {
-        width: 95%;
-    }
-}
-
 .download-sqlite em {
     font-style: normal;
     font-size: 0.8em;
