@@ -838,6 +838,12 @@ form.sql textarea {
     font-size: 1em;
 }
 
+@media only screen and (max-width: 576px) {
+    form.sql textarea {
+        width: 95%;
+    }
+}
+
 .download-sqlite em {
     font-style: normal;
     font-size: 0.8em;
@@ -987,6 +993,21 @@ thead a:link {
 
 table a:visited {
     color: #777777;
+}
+
+@media only screen and (max-width: 576px) {
+    .select-wrapper.small-screen-only {
+        display: inline-block;
+    }
+    .select-wrapper {
+        width: 100px;
+    }
+    .select-wrapper.filter-op {
+        width: 60px;
+    }
+    .filters input.filter-value {
+        width: 140px;
+    }
 }
 
 @media (min-width:219px){        
