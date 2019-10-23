@@ -709,6 +709,12 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
     margin-top: 100px;
     z-index: 3;
 }
+
+.logo {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+  
 .main .logo.cursive{
     font-family: 'Grand Hotel',cursive;
     font-size: 82px;
