@@ -816,7 +816,8 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
 
 .bases {
     margin-left: 4rem;
-  margin-right: 4rem;
+    margin-right: 4rem;
+    word-wrap: break-word;
 }
 
 .crumbs {
