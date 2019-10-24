@@ -863,11 +863,21 @@ pre.wrapped-sql {
     margin-left: 1em;
 }
 
-form input[type=text],
-form input[type=search] {
+form input[type=text] {
     border: 1px solid #ccc;
     border-radius: 3px;
     width: 60%;
+    padding: 9px 4px;
+    display: inline-block;
+    font-size: 1em;
+    font-family: "Roboto", sans-serif;
+    margin-top: 10px;
+}
+
+form input[type=search] {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    width: 50%;
     padding: 9px 4px;
     display: inline-block;
     font-size: 1em;
