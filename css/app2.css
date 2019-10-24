@@ -870,6 +870,7 @@ form input[type=search] {
     display: inline-block;
     font-size: 1em;
     font-family: "Roboto", sans-serif;
+    margin-top: 10px;
 }
 
 form input[type=submit] {
