@@ -1,6 +1,6 @@
 body{
-  background: radial-gradient(#ADBC30 1%, #fff 20%);
-  background-size: 8px 8px; 
+  background: radial-gradient(#adbc3059 1%, #fff 20%);
+  background-size: 15px 15px; 
 }
 .form-control::-moz-placeholder{
    color: #DDDDDD;
