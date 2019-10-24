@@ -1003,6 +1003,7 @@ table a:visited {
     }
     .select-wrapper {
         width: 100px;
+        margin-top: 8px;
     }
     .select-wrapper.filter-op {
         width: 60px;
