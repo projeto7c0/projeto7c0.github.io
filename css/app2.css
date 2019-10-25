@@ -700,12 +700,11 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
     width: 60px
 }
 .main .logo{
-    color: #fff;
+    color: #241f21;
     font-size: 3em;
     font-weight: 300;
     position: relative;
     text-align: center;
-    text-shadow: 0 0 6px rgba(0, 0, 0);
     margin-top: 100px;
     z-index: 3;
 }
