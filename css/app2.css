@@ -1045,3 +1045,7 @@ table a:visited {
         width: 250px;
     }   
 }
+
+.rows-and-columns {
+  overflow-x: auto;
+}
