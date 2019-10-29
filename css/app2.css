@@ -1047,5 +1047,5 @@ table a:visited {
 }
 
 .rows-and-columns {
-  overflow-x: auto;
+  overflow-x: auto !important;
 }
