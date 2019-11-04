@@ -905,7 +905,7 @@ form input[type=submit]:hover {
 }
 
 textarea:focus {
-    border: 3px solid #adbc30 !important;
+    border: 30px solid #adbc30 !important;
 }
 
 .small-screen-only,
