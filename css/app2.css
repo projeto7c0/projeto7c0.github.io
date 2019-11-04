@@ -1057,3 +1057,11 @@ table a:visited {
         width: 250px;
     }   
 }
+
+::selection {
+  background: #adbc30;
+}
+
+::-moz-selection {
+  background: #adbc30;
+}
