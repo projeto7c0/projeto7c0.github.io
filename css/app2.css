@@ -910,6 +910,7 @@ textarea:focus {
 
 input[type="submit"] {
   outline-color: #adbc30;
+  border-radius: 5px;
 }
 
 .small-screen-only,
