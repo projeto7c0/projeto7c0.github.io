@@ -1062,3 +1062,7 @@ select {
   background-color: #fff !important;
   color: #000;
 }
+
+.select-selected {
+  background-color: #000;
+}
