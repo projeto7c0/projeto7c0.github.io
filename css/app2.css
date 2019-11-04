@@ -909,8 +909,8 @@ textarea:focus {
 }
 
 input[type="submit"] {
-  outline-color: #adbc30;
-  border-radius: 5px;
+  border-color: #adbc30 !important;
+  border-radius: 5px !important;
 }
 
 .small-screen-only,
