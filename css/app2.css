@@ -1059,7 +1059,6 @@ table a:visited {
 }
 
 select {
-  background: #adbc30 !important;
-  background-color: #adbc30 !important;
+  background-color: #fff !important;
   color: #000;
 }
