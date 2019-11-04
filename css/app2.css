@@ -1072,3 +1072,8 @@ option:hover {
   background-color: #ADBC30;
   color: #fff;
 }
+
+select:hover {
+  background-color: #ADBC30;
+  color: #fff;
+}
