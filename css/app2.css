@@ -904,7 +904,11 @@ form input[type=submit]:hover {
     background-color: #241F21;
 }
 
-textarea:focus input {
+textarea:focus {
+  outline: 1px solid #adbc30;
+}
+
+input:focus {
   outline: 1px solid #adbc30;
 }
 
