@@ -1059,7 +1059,7 @@ table a:visited {
 }
 
 select {
-  background: #adbc30;
-  background-color: #adbc30;
-  color: #fff;
+  background: #adbc30 !important;
+  background-color: #adbc30 !important;
+  color: #000;
 }
