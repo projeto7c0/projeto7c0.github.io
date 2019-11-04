@@ -905,7 +905,7 @@ form input[type=submit]:hover {
 }
 
 textarea:focus {
-  outline: 30px solid orange;
+  outline: 3px solid #adbc30;
 }
 
 .small-screen-only,
