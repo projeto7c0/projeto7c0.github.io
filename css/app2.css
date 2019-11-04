@@ -1057,23 +1057,3 @@ table a:visited {
         width: 250px;
     }   
 }
-
-select {
-  background-color: #fff !important;
-  color: #000;
-}
-
-option:checked {
-  background-color: #ADBC30;
-  color: #fff;
-}
-
-option:hover {
-  background-color: #ADBC30;
-  color: #fff;
-}
-
-select:hover {
-  background-color: #ADBC30;
-  color: #fff;
-}
