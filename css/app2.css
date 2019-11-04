@@ -1065,4 +1065,10 @@ select {
 
 option:checked {
   background-color: #ADBC30;
+  color: #fff;
+}
+
+option:hover {
+  background-color: #ADBC30;
+  color: #fff;
 }
