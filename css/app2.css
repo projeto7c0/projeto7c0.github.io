@@ -904,6 +904,10 @@ form input[type=submit]:hover {
     background-color: #241F21;
 }
 
+textarea:focus {
+    border: 3px solid #adbc30;
+}
+
 .small-screen-only,
 .select-wrapper.small-screen-only {
     display: none;
