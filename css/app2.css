@@ -1058,10 +1058,8 @@ table a:visited {
     }   
 }
 
-::selection {
+select {
   background: #adbc30;
-}
-
-::-moz-selection {
-  background: #adbc30;
+  background-color: #adbc30;
+  color: #fff;
 }
