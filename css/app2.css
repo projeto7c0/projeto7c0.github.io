@@ -1068,21 +1068,29 @@ table, td, th {
 }
 
 table.scroll thead tr:after {	
-  content: '';	overflow-y: scroll;	visibility: hidden;
+  content: '' !important;	
+  overflow-y: scroll !important;	
+  visibility: hidden !important;
 }
 
 table.scroll thead th {	
-  flex: 1 auto;	display: block;
+  flex: 1 auto !important;	
+  display: block !important;
 }
 
 table.scroll tbody {	
-  display: block;	width: 100%;	overflow-y: auto;	height: auto;	max-height: 200px;
+  display: block !important;	
+  width: 100% !important;
+  overflow-y: auto !important;
+  height: auto !important;
+  max-height: 200px !important;
 }
 
 table.scroll thead tr,table.scroll tbody tr {	
-  display: flex;
+  display: flex !important;
 }
 
 table.scroll tbody tr td {	
-  flex: 1 auto;	word-wrap: break;
+  flex: 1 auto !important;	
+  word-wrap: break !important;
 }
