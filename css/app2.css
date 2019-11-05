@@ -1066,3 +1066,23 @@ table, td, th {
   overflow-x: auto !important;
   max-height: 80vh !important;
 }
+
+table.scroll thead tr:after {	
+  content: '';	overflow-y: scroll;	visibility: hidden;
+}
+
+table.scroll thead th {	
+  flex: 1 auto;	display: block;
+}
+
+table.scroll tbody {	
+  display: block;	width: 100%;	overflow-y: auto;	height: auto;	max-height: 200px;
+}
+
+table.scroll thead tr,table.scroll tbody tr {	
+  display: flex;
+}
+
+table.scroll tbody tr td {	
+  flex: 1 auto;	word-wrap: break;
+}
