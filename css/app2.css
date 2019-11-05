@@ -1063,6 +1063,6 @@ table, td, th {
 }
 
 .table-size{
-  overflow-x: auto; 
-  max-height: 80vh;
+  overflow-x: auto !important;
+  max-height: 80vh !important;
 }
