@@ -983,6 +983,10 @@ tr:nth-child(even) {
   background: #e8e8e8 !important;
 }
 
+tr:nth-child(odd) {
+  background: #fff !important;
+}
+
 td {
     border-top: 1px solid #aaa;
     border-right: 1px solid #eee;
