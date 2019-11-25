@@ -980,7 +980,7 @@ thead {
 }
 
 tr:nth-child(even) {
-  background: #e8e8e8;
+  background: #e8e8e8 !important;
 }
 
 td {
