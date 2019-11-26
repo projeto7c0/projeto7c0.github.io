@@ -1064,7 +1064,13 @@ table a:visited {
 
 @media (max-width:1200px){
   #search-all-fts-text{
-        width: 40vw !important;
+        width: 45vw !important;
+    }
+}
+
+@media (max-width:589px){
+  #search-all-fts-text{
+        margin-top:1em !important;
     }
 }
 
