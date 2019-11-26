@@ -1060,6 +1060,9 @@ table a:visited {
     .main .subscribe .form-group{
         width: 250px;
     }
+}
+
+@media (max-width:1200px){
   #search-all-fts-text{
         width: 40vw !important;
     }
