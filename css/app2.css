@@ -1059,7 +1059,10 @@ table a:visited {
 @media (min-width:1200px){        
     .main .subscribe .form-group{
         width: 250px;
-    }   
+    }
+  #search-all-fts-text{
+        width: 40vw !important;
+    }
 }
 
 table, td, th {
