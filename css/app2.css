@@ -1062,17 +1062,17 @@ table a:visited {
     }
 }
 
-@media (max-width:1200px){
+/*@media (max-width:1200px){*/
   #search-all-fts-text{
         width: 45vw !important;
     }
-}
+/*}*/
 
 /*@media (max-width:589px){*/
   #search-all-fts-text{
         margin-top:2em !important;
     }
-}
+/*}*/
 
 table, td, th {
   border: 1px solid black;
