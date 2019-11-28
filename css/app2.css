@@ -1062,21 +1062,16 @@ table a:visited {
     }
 }
 
-/*@media (max-width:1200px){
+@media (max-width:1200px){
   #search-all-fts-text{
         width: 45vw !important;
     }
-}*/
+}
 
 @media (max-width:589px){
   #search-all-fts-text{
         margin-top:2em !important;
     }
-}
-
-#search-all-fts-text {
-  margin-left: 20rem !important;
-  margin-right: 20rem !important;
 }
 
 table, td, th {
