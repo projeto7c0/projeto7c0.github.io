@@ -730,7 +730,7 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
     font-size: 1.5em;
     color: #241f21;
     text-align: center;
-    margin-top: 50px;   
+    margin-top: 20px;   
 }
 
 .motto {
@@ -1068,7 +1068,7 @@ table a:visited {
     }
 }
 
-@media (max-width:589px){
+/*@media (max-width:589px){*/
   #search-all-fts-text{
         margin-top:2em !important;
     }
