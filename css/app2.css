@@ -1,6 +1,6 @@
 body{
-  background: radial-gradient(#adbc3059 1%, #fff 20%);
-  background-size: 12px 12px;
+  /*background: radial-gradient(#adbc3059 1%, #fff 20%);
+  background-size: 12px 12px;*/
   font-family: "Roboto", sans-serif;
 }
 .form-control::-moz-placeholder{
