@@ -711,8 +711,8 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
 }
 
 .logo {
-  margin-left: 2rem;
-  margin-right: 2rem;
+  margin-left: 20rem;
+  margin-right: 20rem;
 }
   
 .main .logo.cursive{
@@ -735,8 +735,8 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
 
 .motto {
  position: relative;
- margin-left: 2rem;
- margin-right: 2rem;
+ margin-left: 20rem;
+ margin-right: 20rem;
 }
 
 .main .subscribe .info-text{
