@@ -1,6 +1,6 @@
 .borders {
     border: #000000 1px solid; /* A very subtle grey colored border in the header. */
-    padding: 50px;
+    padding: 30px 50px 10px 50px;
 }
 
 .centralized {

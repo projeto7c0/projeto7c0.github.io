@@ -17,109 +17,112 @@
   <script type="text/javascript" src="./js/scripts.js"></script>
 </head>
 <body>
-  <header>
+  <div class="container">
+    <header>
+        <div class="row">
+          <div class="col-4">
+            <a href="index.html"><h1>PROJETO 7c0</h1></a>
+          </div>
+          <div class="col-8">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li class="current"><a href="about.html">Sobre</a></li>
+              <li><a href="source.html">Código-Fonte</a></li>
+              <li><a href="media.html">Na mídia</a></li>
+              <li><a href="https://apoia.se/projeto7c0">Apoie</a></li>
+            </ul>
+          </div>
+      </div>
+    </header>
+
     <div class="container">
       <div class="row">
-        <div class="col-4">
-          <a href="index.html"><h1>PROJETO 7c0</h1></a>
-        </div>
-        <div class="col-8">
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li class="current"><a href="about.html">Sobre</a></li>
-            <li><a href="source.html">Código-Fonte</a></li>
-            <li><a href="media.html">Na mídia</a></li>
-            <!-- <li><a href="support.html">Apoie</a></li> -->
-          </ul>
-        </div>
-      </div>
-    </div>
-  </header>
+        <div class="col-9">
+          <p>&nbsp</p>
 
-  <div class="container">
-    <div class="row">
-      <div class="col-9">
-        <p>&nbsp</p>
+          <h1>Sobre o projeto</h1>
+          <p>As redes sociais são cada vez mais usadas por atores políticos no mundo todo. Segundo o estudo Twiplomacy 2018,
+            97% dos países membros da ONU possuem uma representação oficial no Twitter, e no Brasil sabemos que pelo menos 439
+            atores políticos utilizam o Twitter.</p>
+            <p>Esses dados são relevantes, pois o Twitter se tornou uma plataforma de comunicação direta entre os políticos e
+              os cidadãos, e de debate entre os próprios políticos. Essa plataforma porém, permite que seus usuários removam postagens
+              realizadas em qualquer tempo sem deixar qualquer registro dessa remoção. </p>
+              <p>Ao contrário dos particulares, esses atores políticos estão cumprindo mandatos ou são nomeados para cargos de governo,
+                e portanto deveriam ter seu discurso pautado pelos princípios da administração pública. Um desses princípios, o da publicidade,
+                é contrário a possibilidade de remover conteúdos.</p>
+                <p>A partir disso nasceu o projeto 7c0, com o objetivo de criar mecanismos para garantir que postagens realizadas por um
+                  ator político em um ambiente público como o Twitter sejam arquivadas e recuperadas caso sejam deletadas.</p>
+                  <p>Como existe uma confusão entre as postagens do particular e do ator político, o projeto 7c0 considera que todo o
+                    conteúdo da conta representa a atuação política daquela pessoa a partir do momento que ela assume o cargo.</p>
+                    <p>O projeto 7c0 é desenvolvido em código aberto e está hospedado na Amazon Web Services. <a href="https://apoia.se/projeto7c0">
+                      O projeto está com financiamento coletivo no site do Apoia-se, contribua</a>.</p>
+                    </div>
 
-        <h1>Sobre o projeto</h1>
-        <p>As redes sociais são cada vez mais usadas por atores políticos no mundo todo. Segundo o estudo Twiplomacy 2018,
-          97% dos países membros da ONU possuem uma representação oficial no Twitter, e no Brasil sabemos que pelo menos 439
-          atores políticos utilizam o Twitter.</p>
-          <p>Esses dados são relevantes, pois o Twitter se tornou uma plataforma de comunicação direta entre os políticos e
-            os cidadãos, e de debate entre os próprios políticos. Essa plataforma porém, permite que seus usuários removam postagens
-            realizadas em qualquer tempo sem deixar qualquer registro dessa remoção. </p>
-            <p>Ao contrário dos particulares, esses atores políticos estão cumprindo mandatos ou são nomeados para cargos de governo,
-              e portanto deveriam ter seu discurso pautado pelos princípios da administração pública. Um desses princípios, o da publicidade,
-              é contrário a possibilidade de remover conteúdos.</p>
-              <p>A partir disso nasceu o projeto 7c0, com o objetivo de criar mecanismos para garantir que postagens realizadas por um
-                ator político em um ambiente público como o Twitter sejam arquivadas e recuperadas caso sejam deletadas.</p>
-                <p>Como existe uma confusão entre as postagens do particular e do ator político, o projeto 7c0 considera que todo o
-                  conteúdo da conta representa a atuação política daquela pessoa a partir do momento que ela assume o cargo.</p>
-                  <p>O projeto 7c0 é desenvolvido em código aberto e está hospedado na Amazon Web Services. <a href="https://apoia.se/projeto7c0">
-                    O projeto está com financiamento coletivo no site do Apoia-se, contribua</a>.</p>
+                    <div class="col-3">
+                      <p>&nbsp</p>
+
+                      <h3>Entre em contato conosco</h3>
+                      <form class="quote" action="https://formspree.io/bigbrother@projeto7c0.com.br" method="POST">
+
+                      <div>
+                        <label for="contact-name">Nome</label><br>
+                        <input type="text" class="form-control" id="contact-name" name="name" placeholder="Digite seu nome..."
+                        onkeyup='validateName()'>
+                        <span class='error-message' id='name-error'></span>
+                      </div>
+
+                      <div>
+                        <label for="contact-email">E-mail</label><br>
+                        <input type="email" class="form-control" id="contact-email" name="email" placeholder="Digite seu e-mail..."
+                        onkeyup='validateEmail()'>
+                        <span class='error-message' id='email-error'></span>
+                      </div>
+
+                      <div>
+                        <label for="contact-comment">Mensagem</label><br>
+                        <textarea class="form-control" rows="5" id='contact-comment' name='comment' placeholder="Digite sua mensagem..."
+                        onkeyup='validateMessage()'></textarea>
+                        <span class='error-message' id='comment-error'></span>
+                      </div>
+
+                      <br />
+                      <button class="btn btn-dark" type="submit" onclick='return validateForm()'>Enviar</button>
+                      <br>
+                      <span class='error-message' id='submit-error'></span>
+
+                    </form>
                   </div>
-
-                  <div class="col-3">
-                    <p>&nbsp</p>
-
-                    <h3>Entre em contato conosco</h3>
-                    <form class="quote" action="https://formspree.io/bigbrother@projeto7c0.com.br" method="POST">
-
-                    <div>
-                      <label for="contact-name">Nome</label><br>
-                      <input type="text" class="form-control" id="contact-name" name="name" placeholder="Digite seu nome..."
-                      onkeyup='validateName()'>
-                      <span class='error-message' id='name-error'></span>
-                    </div>
-
-                    <div>
-                      <label for="contact-email">E-mail</label><br>
-                      <input type="email" class="form-control" id="contact-email" name="email" placeholder="Digite seu e-mail..."
-                      onkeyup='validateEmail()'>
-                      <span class='error-message' id='email-error'></span>
-                    </div>
-
-                    <div>
-                      <label for="contact-comment">Mensagem</label><br>
-                      <textarea class="form-control" rows="5" id='contact-comment' name='comment' placeholder="Digite sua mensagem..."
-                      onkeyup='validateMessage()'></textarea>
-                      <span class='error-message' id='comment-error'></span>
-                    </div>
-
-                    <br />
-                    <button class="btn btn-dark" type="submit" onclick='return validateForm()'>Enviar</button>
-                    <br>
-                    <span class='error-message' id='submit-error'></span>
-
-                  </form>
                 </div>
-              </div>
 
-              <div class="row">
-                <div class="col-10">
-                  <h3>Lista de apoiadores</h3>
-                </div>
-              </div>
-
-            </div>
-
-            <section id="newsletter">
-              <div class="container">
                 <div class="row">
-                  <div class="col centralized">
-                    <h3>Receba atualizações do projeto &nbsp;</h3>
-                    <a href="https://projeto7c0.us20.list-manage.com/subscribe/post?u=984470f280d60b82c247e3d7b&amp;id=00a31b0d4a"
-                    class="btn btn-light button_1">Inscreva-se</a>
+                  <div class="col-10">
+                    <h1>Lista de apoiadores</h1>
+                    <ul>
+                      <li><p>ninguém ainda</p></li>
+                    </ul>
                   </div>
                 </div>
+
               </div>
-            </section>
+
+              <section id="newsletter">
+                <div class="container">
+                  <div class="row">
+                    <div class="col centralized">
+                      <h3>Receba atualizações do projeto &nbsp;</h3>
+                      <a href="https://projeto7c0.us20.list-manage.com/subscribe/post?u=984470f280d60b82c247e3d7b&amp;id=00a31b0d4a"
+                      class="btn btn-light button_1">Inscreva-se</a>
+                    </div>
+                  </div>
+                </div>
+              </section>
 
 
-            <footer>
-              <h5>Projeto 7C0, Copyright &copy; 2020</h5>
-            </footer>
-        </body>
+              <footer>
+                <h5>Projeto 7C0, Copyright &copy; 2020</h5>
+              </footer>
+            </div>
+          </body>
         </html>
 
         <!-- Browser Sync -->
