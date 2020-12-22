@@ -16,7 +16,7 @@ img {
   height: auto;
 }
 
-p a, p a:link, p a:hover, p a:visited, h3 a, h3 a:link, h3 a:hover, h3 a:visited {
+p a, p a:link, p a:hover, p a:visited, h3 a, h3 a:link, h3 a:hover, h3 a:visited, h2 a, h2 a:link, h2 a:hover, h2 a:visited {
   color: #808080;
   text-decoration: underline;
 }
