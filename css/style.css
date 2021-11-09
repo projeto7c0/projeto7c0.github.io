@@ -1,61 +1,68 @@
-/* CSS FILE */
-
-/* --------------- Global --------------- */
-
-.container{ /* As "container" is a class we use the dot before the word "container". */
-    width: 80%; /* We're setting the width as a percentage in order to improve the page responsiveness. */
-    margin: auto; 
-    overflow: hidden; /* When the screen get resized we won't see a scroolbar. */
+.borders {
+    border: #000000 1px solid; /* A very subtle grey colored border in the header. */
+    padding: 30px 50px 10px 50px;
 }
 
-ul{
-    margin: 0;
-    padding: 0;    
+.centralized {
+  text-align: center;
+}
+
+.right-align {
+  text-align: right;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+p a, p a:link, p a:hover, p a:visited, h3 a, h3 a:link, h3 a:hover, h3 a:visited, h2 a, h2 a:link, h2 a:hover, h2 a:visited {
+  color: #808080;
+  text-decoration: underline;
 }
 
 .button_1{
-    height: 38px;
-    background: #000000; 
-    border: #2c2b29 2px solid;
-    padding-left: 10px;
-    padding-right: 10px;
-    color: #ffffff;
+    background: #ffffff;
+    border: #ffffff 2px solid;
+    padding: 5px 10px;
+    color: #000000;
+    font-family: 'Roboto Mono';
+    font-size: 18px;
 }
 
 .button_1:hover {
-    border: white 2px solid;    
-	cursor: pointer;
+    border: white 2px solid;
+	   cursor: pointer;
 }
-
-.dark{
-    padding: 20px;
-    background: #000000;
-    color: #ffffff;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-/* --------------- Header --------------- */
 
 header{
-    background: #000000;    
-    color: #ffffff; /* The header letter's color get white. */
-    padding-top: 30px; /* Margin in the top. */
-    min-height: 70px; /* When the screen gets smaller that is the minimun height it gets. */
-    border-bottom: #808080 3px solid; /* A very subtle grey colored border in the header. */
+    padding-top: 30px;
+    padding-bottom: 30px;
+    min-height: 70px;
+    border-bottom: #000000 3px solid;
 }
 
-header a{ /* CSS for the header links. */
-    color: #ffffff;
-    text-decoration: none; /* Remove underline. */
-    text-transform: uppercase; /* We don't have to use uppercases in the HTML markup. */
-    font-size: 16px;
+footer{
+    padding: 5px;
+    margin-top: 0px;
+    color: #000000;
+    background-color: #ffffff;
+    text-align: center;
+    height: 35px;
+}
+
+header a{
+    font-family: 'Roboto Mono';
+    color: #000000;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16pt;
 }
 
 header li{
-    /* float: left; */ /* This atribute does not work with display:inline */
     display: inline;
-    padding: 0 20px 0 20px; /*Top, right, bottom, left. */
+    padding: 0 20px 0 20px;
 }
 
 header #branding{
@@ -63,7 +70,7 @@ header #branding{
 }
 
 header #branding h1{
-    margin: 0;
+    margin: auto;
 }
 
 header nav{
@@ -71,168 +78,66 @@ header nav{
     margin-top: 10px;
 }
 
-.tweet {
-	float: left;
-	margin-top: 15px;
-	margin-bottom: 15px;
-	margin-right: 30px;
-}
-
-header .highlight, header .current a{
+header .highlight, header .current a {
     color: #808080; /* #35424a */
     font-weight: bold;
 }
 
-header a:hover{ /* When you pass the mouse over the nav the text will change its colors. */
+header ul a:hover{ /* When you pass the mouse over the nav the text will change its colors. */
     color: #cccccc;
     font-weight: bold;
 }
 
-/* --------------- Body --------------- */
-
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    line-height: 1.5;
-    padding: 0;
-    background-color: #f4f4f4;
+header div a:hover { /* When you pass the mouse over the nav the text will change its colors. */
+text-decoration: none;
+color: inherit;
 }
 
-/* --------------- Showcase --------------- */ 
-
-#showcase{    
-    text-align: center;
-    color: #ffffff;
-    background-color: white;
+h1 {
+  font-family: 'Roboto Mono';
+  font-weight: bold;
+  font-size: 28pt;
 }
 
-#showcase .eye_container{ /* As "container" is a class we use the dot before the word "container". */
-    width: 60%; /* We're setting the width as a percentage in order to make the page responsive. */
-    margin: auto; 
-    overflow: hidden; /* When the screen get resized we won't see a scroolbar. */    
-	background: #ffffff;
+h2 {
+  font-family: 'Roboto Mono';
+  font-weight: normal;
+  font-size: 20pt;
 }
 
-.eye_phrase {
-	font-size: 18px;
-	text-align: center;
-	color: #000;
+h3 {
+  font-family: 'Roboto Mono';
+  font-weight: bold;
+  font-size: 14pt;
+  margin: auto inherit;
+  display: inline;
 }
 
-.eye_signature {
-	font-size: 12px;
-	text-align: center;
-	color: #000;
+h4 {
+  font-family: 'Merriweather';
+  font-weight: bold;
+  font-size: 20pt;
 }
 
-#showcase img{
-    padding: 30px 0px 60px 0px; /* top, right, bottom, left */
-    width: 100%;
-    max-width: 600px;
-    height: auto;
+h5 {
+  font-family: 'Roboto Mono';
+  font-weight: normal;
+  font-size: 18pt;
 }
 
-/* --------------- Newsletter --------------- */ 
-
-#newsletter{
-    margin-top: 20px;    
-    color: #ffffff;
-    background: #808080;
+h6 {
+  font-family: 'Roboto Mono';
+  font-weight: bold;
+  font-size: 14pt;
+  padding: 15px 0px;
 }
 
-#newsletter h1{
-    margin-right: 20px;  
+
+p {
+  font-family: 'Merriweather';
+  font-weight: normal;
+  font-size: 14pt;
 }
-
-#newsletter .container{
-    display: flex;
-    flex-direction: row; /* Coloca os elementos dispostos em linhas ou colunas */
-    justify-content: center; /* Centraliza tudo centro do container */
-    align-items: center;
-}
-
-/* --------------- Boxes --------------- */
-
-#boxes .box_container {    
-    display: flex;
-    flex-direction: row; /* Coloca os elementos dispostos em linhas ou colunas */
-    justify-content: center; /* Centraliza tudo centro do container */
-    align-items: center;
-}
-
-#boxes .gallery {    
-    width: 23%;
-    height: 225px;
-    padding: 50px 50px 20px 50px; /* top, right, bottom, left */
-}
-
-#boxes div.box {    
-    text-align: center; /* Centraliza todos os elementos de texto cada box */
-}
-
-#boxes div.box img {
-    width: 100%;
-    max-width: 250px;
-    min-width: 145px;
-    height: auto;
-}
-
-/* --------------- Main-col --------------- */
-
-article#main-col{
-    float: left;
-    width: 65%;
-}
-
-article#main-col-single{
-    float: left;
-    width: 90%;
-}
-
-/* --------------- Sidebar --------------- */
-
-aside#sidebar{
-    float: right;
-    width: 20%; /* Again, to be responsive we set a percentage value. */
-    min-width: 200px; /* Set a minimum value for better responsiveness */
-    margin-top: 50px;
-}
-
-aside#sidebar .quote input, aside#sidebar .quote textarea{ /* Note that all input elements are being affected. */
-    width: 95%;/* Again, to be responsive we set a percentage value. */
-    padding: 5px;    
-}
-
-/* --------------- Services --------------- */
-
-ul#services li{
-    list-style: none;
-    padding: 0px 20px 0px 20px;
-    border: #cccccc solid 1px;
-    margin-bottom: 5px;
-    background: #e6e6e6;
-}
-
-/* --------------- Footer --------------- */
-
-footer{
-    padding: 5px;
-    margin-top: 0px;
-    color: #ffffff;
-    background-color: #000000; 
-    text-align: center;
-}
-
-/* ---------- colunas -------- */
-.columns {
-	column-count: 4;
-}
-
-.first-column {
-	width: 40%;
-}	
-
-/* ---------------- tabelas zebradas ------- */
 
 .zebra-odd	 {
     background: #d6d6d6;
@@ -241,69 +146,9 @@ footer{
 	background: #e6e6e6;
 }
 
-/* --------------- Media Queries --------------- */ 
-/* Code to make the page adapt dependin on the device screen. */
-
-/* Change the elements when the browser window is 768px wide or less: */
-@media(max-width: 768px){ 
-    header #branding,
-    header nav, 
-    header nav li, 
-    #newsletter h1, 
-    #newsletter form,    
-    article#main-col,
-    aside#sidebar{ /* The branding and other itens will be on top of each other. */
-        float: none;
-        text-align: center;
-        width: 100%;
-    }
-
-    header{ /* Add some space underneath the header when the screen get resized. */
-        padding-bottom: 20px;
-    }
-
-    #showcase{
-        min-height: 250px; /* Just set a minimun value because we want the site to be responsive. */
-    }
-
-    #showcase img{
-        padding: 40px 0px 0px 0px; /* top, right, bottom, left */
-        width: 100%;
-        max-width: 250px;
-        height: auto;
-    }   
-    
-    #boxes .box_container {
-        display: flex;
-        flex-direction: column; /* Coloca os elementos dispostos em linhas ou colunas */
-        justify-content: center; /* Centraliza tudo centro do container */
-        align-items: center;
-    }
-
-    #boxes .gallery {
-        width: 50%;
-        height: auto;
-        padding: 20px 10px 10px 10px; /* top, right, bottom, left */
-    }
-
-    #boxes div.box img {
-        width: 100%;
-        height: auto;
-    }   
-    
-    #newsletter .container {
-        display: flex;
-        flex-direction: column; /* Coloca os elementos dispostos em linhas ou colunas */
-        justify-content: center; /* Centraliza tudo centro do container */
-        align-items: center;
-    }    
-
-    #newsletter .quote button{
-        width: 100%;
-    }  
-
-    #newsletter .button_1{
-        margin-bottom: 10px;
-        width: 45%;
-    } 
+#newsletter {
+  background: #000000;
+  color: #ffffff;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }

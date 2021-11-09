@@ -1,134 +1,133 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <meta name="description" content="Website do Projeto 7C0.">
-    <meta name="keywords" content="Projeto 7C0, monitoramento, políticos, atores públicos">
-    <link rel="icon" type="image/x-icon" href="./img/eye.ico" />
-    <title>Projeto 7C0 | Código-Fonte</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <script type="text/javascript" src="./js/scripts.js"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163521545-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-163521545-1');
+  </script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="description" content="Website do Projeto 7C0. Monitorando as redes sociais de autoridades para evitar que postagens sejam removidas.">
+  <meta name="keywords" content="Projeto 7C0, monitoramento, políticos, atores públicos, twitter, autoridades, bot, bots">
+  <link rel="icon" type="image/x-icon" href="./img/eye.ico"/>
+  <title>Projeto 7C0 | Código-fonte</title>
+  <link href="https://fonts.googleapis.com/css?family=Merriweather%7CRoboto+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script src="./js/scripts.js"></script>
 </head>
 
 <body>
-
+  <div class="container">
     <header>
-        <div class="container">
-            <div id="branding">
-                <h1>
-                    Projeto 7C0 | Como funciona o projeto
-                </h1>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">Sobre</a></li>
-                    <li class="current"><a href="source.html">Código-Fonte</a></li>
-					<li><a href="media.html">Na mídia</a></li>
-					<!-- <li><a href="https://apoia.se/projeto7c0">Apoie</a></li> -->
-                </ul>
-            </nav>
+      <div class="row">
+        <div class="col-12 col-lg-4">
+          <a href="/"><h1>PROJETO 7c0</h1></a>
         </div>
+        <div class="col-12 col-lg-8">
+          <div class="row">
+            <div class="col-12 col-md-6 col-lg-3"><a href="about.html">iniciativas</a></div>
+            <div class="col-12 col-md-6 col-lg-3 current"><a href="source.html">transparência</a></div>
+            <div class="col-lg-6"></div>
+            <div class="col-12 col-md-6 col-lg-3"><a href="media.html">na mídia</a></div>
+            <div class="col-12 col-md-6 col-lg-3"><a target="_blank" href="https://apoia.se/projeto-7c0">apoie</a></div>
+          </div>
+        </div>
+      </div>
     </header>
 
-    <section id="main">
-        <div class="container">
-            <article id="main-col">
-				<p>&nbsp;</p>
-                <ul id="services">
-                    <li>
-                        <h3>Código Python</h3>
-                        <p>O projeto 7c0 é escrito na linguagem Python, na versão 3.7.2. Além disso, utilizamos diversas bibliotecas 
-						para facilitar o desenvolvimento: PyMySql para conexão com o banco de dados; Tweepy para conexão com as APIs 
-						do Twitter archiveis para realizar o arquivo dos tweets; E pandas para manipulação de arquivos do tipo .csv.</p>
-                    </li>
-                    <li>
-                        <h3>Lista de políticos</h3>
-                        <p>A lista de políticos utilizada pelo projeto 7c0 está publicada no Github do projeto, e pode ser utilizada 
-						por qualquer pessoa interessada nessas informações. Caso perceba algum erro na lista, nos avise que atualizamos.</p>
-                    </li>
-                    <li>
-                        <h3>Banco de dados</h3>
-                        <p>O projeto armazena em um banco de dados MySQL as seguintes informações relativas as postagens no Twitter: 
-						identificador da postagem, nome do usuário que realizou a postagem, data e hora, o conteúdo postado, e um link 
-						da postagem arquivada no site archive.vn.</p>
-                    </li>
-					<li>
-						<h3>As APIs do Twitter</h3>
-						<p>O projeto utiliza as APIs gratuitas do Twitter, que mesmo com suas limitações, permite a captura de dados 
-						no volume atual do projeto 7c0, com mais de 400 contas de políticos brasileiros ativos.</p>
-					</li>
-                    <li>
-                        <h3>Contribua no GitHub</h3>
-                        <p>Convidamos você para contribuir no nosso github de duas formas: Ajudando a manter a lista de políticos e 
-						suas redes sociais atualizada e sugerindo melhorias no código-fonte do projeto.</p>
-                    </li>
-                </ul>
-            </article>
-            <aside id="sidebar">
-                <div class="dark">
-                    <h3>Entre em contato conosco</h3>
-                    <!--
-                        <form action="getaquote.php" class="quote"></form>                        
-                    -->
-                    <form class="quote" action="https://formspree.io/bigbrother@projeto7c0.com.br" method="POST">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-9">
+          <p>&nbsp;</p>
 
-                        <div>
-                            <label for="contact-name">Nome</label><br>
-                            <input type="text" class="form-control" id="contact-name" name="name" placeholder="Digite seu nome..."
-                                onkeyup='validateName()'>
-                            <br>
-                            <span class='error-message' id='name-error'></span>
-                        </div>
+          <h1>Como funciona a iniciativa de recuperação de tweets do projeto 7c0</h1>
 
-                        <div>
-                            <label for="contact-email">E-mail</label><br>
-                            <input type="email" class="form-control" id="contact-email" name="email" placeholder="Digite seu e-mail..."
-                                onkeyup='validateEmail()'>
-                            <span class='error-message' id='email-error'></span>
-                        </div>
+          <h2>Código Python</h2>
+          <p>O projeto 7c0 é escrito na linguagem Python, na versão 3.7.2. Além disso, utilizamos diversas bibliotecas para facilitar o desenvolvimento: PyMySql para conexão com o banco de dados; Tweepy para conexão com as do Twitter archiveis para realizar o arquivo dos tweets; E pandas para manipulação de arquivos do tipo .csv.</p>
 
-                        <div>
-                            <label for="contact-comment">Mensagem</label><br>
-                            <textarea class="form-control" rows="5" id='contact-comment' name='comment' placeholder="Digite sua mensagem..."
-                                onkeyup='validateMessage()'></textarea>
-                            <span class='error-message' id='comment-error'></span>
-                        </div>
+          <h2>Lista de políticos</h2>
+          <p>A lista de políticos utilizada pelo projeto 7c0 está publicada no Github do projeto, e pode ser utilizada por qualquer pessoa interessada nessas informações. Caso perceba algum erro na lista, nos avise que atualizamos.</p>
 
-                        <button class="button_1" type="submit" onclick='return validateForm()'>Enviar</button>
-                        <br>
-                        <span class='error-message' id='submit-error'></span>
+          <h2>Banco de dados</h2>
+          <p>O projeto armazena em um banco de dados MySQL as seguintes informações relativas as postagens no Twitter: identificador da postagem, nome do usuário que realizou a postagem, data e hora, o conteúdo postado, e um link da postagem arquivada no site archive.vn.</p>
 
-                    </form>
-                </div>
-            </aside>
+          <h2>As APIs do Twitter</h2>
+          <p>O projeto utiliza as APIs gratuitas do Twitter, que mesmo com suas limitações, permite a captura de dados no volume atual do projeto 7c0, com mais de 500 contas de políticos brasileiros ativos.</p>
+
+          <h2>Contribua no <a href="https://github.com/projeto7c0" rel=noopener target="_blank">GitHub</a></h2>
+          <p>Convidamos você para contribuir no nosso github de duas formas: Ajudando a manter a lista de políticos e suas redes sociais atualizada e sugerindo melhorias no  <a href="https://github.com/projeto7c0" rel=noopener target="_blank">código-fonte do projeto</a>.</p>
         </div>
+        <div class="col-12 col-lg-3">
+          <p>&nbsp;</p>
+
+          <h3>Entre em contato conosco</h3>
+          <form class="quote" action="https://formspree.io/bigbrother@projeto7c0.com.br" method="POST">
+
+            <div>
+              <label for="contact-name">Nome</label><br>
+              <input type="text" class="form-control" id="contact-name" name="name" placeholder="Digite seu nome..."
+              onkeyup='validateName()'>
+              <span class='error-message' id='name-error'></span>
+            </div>
+
+            <div>
+              <label for="contact-email">E-mail</label><br>
+              <input type="email" class="form-control" id="contact-email" name="email" placeholder="Digite seu e-mail..."
+              onkeyup='validateEmail()'>
+              <span class='error-message' id='email-error'></span>
+            </div>
+
+            <div>
+              <label for="contact-comment">Mensagem</label><br>
+              <textarea class="form-control" rows="5" id='contact-comment' name='comment' placeholder="Digite sua mensagem..."
+              onkeyup='validateMessage()'></textarea>
+              <span class='error-message' id='comment-error'></span>
+            </div>
+
+            <br />
+            <button class="btn btn-dark" type="submit" onclick='return validateForm()'>Enviar</button>
+            <br>
+            <span class='error-message' id='submit-error'></span>
+
+          </form>
+          <p>&nbsp;</p>
+
         </div>
-    </section>
+      </div>
+    </div>
 
     <section id="newsletter">
-        <div class="container">
-
+      <div class="container">
+        <div class="row">
+          <div class="col centralized">
             <h3>Receba atualizações do projeto &nbsp;</h3>
-            <form action="https://www.nucleo.jor.br/newsletters/7c0/"
-                method="post" target="_blank" novalidate>
-                <input class="button_1" type="submit" value="Inscreva-se" name="subscribe">
-            </form>
+            <a href="https://www.nucleo.jor.br/newsletters/7c0/"
+            class="col-12 col-md-2 btn btn-light button_1">Inscreva-se</a>
+            </div>
         </div>
+      </div>
     </section>
 
     <footer>
-        <p>Projeto 7C0, Copyright &copy; 2019</p>
+      <h5>Projeto 7C0, Copyright &copy; 2020</h5>
     </footer>
-
+  </div>
 </body>
 
 </html>
 
 <!-- Browser Sync -->
-<!-- 
-    You can sync this code using VSCode Browser Sync by typing "Server mode in browser" and then
-    chosing the following files to be sync "*.html|./css/*.css".
+<!--
+You can sync this code using VSCode Browser Sync by typing "Server mode in browser" and then
+chosing the following files to be sync "*.html|./css/*.css".
 -->

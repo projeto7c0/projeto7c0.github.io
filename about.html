@@ -1,118 +1,236 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width">
-        <meta name="description" content="Website do Projeto 7C0."> 
-        <meta name="keywords" content="Projeto 7C0, monitoramento, políticos, atores públicos">
-        <link rel="icon" type="image/x-icon" href="./img/eye.ico"/>
-        <title>Projeto 7C0 | Sobre</title>
-        <link rel="stylesheet" href="./css/style.css">
-        <script type="text/javascript" src="./js/scripts.js"></script>
-    </head>
-    <body>
-        <header>
-            <div class="container">
-                <div id="branding">
-                    <h1>Projeto 7C0 | Sobre o projeto</h1>
-                </div>
-                <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li class="current"><a href="about.html">Sobre</a></li>
-                    <li><a href="source.html">Código-Fonte</a></li>
-					<li><a href="media.html">Na mídia</a></li>
-					<!-- <li><a href="https://apoia.se/projeto7c0">Apoie</a></li> -->
-                </ul>
-                </nav>
-            </div>
-        </header>
-        <section id="main">
-            <div class="container">
-                <article id="main-col">
-					<p>&nbsp</p>
-					<p>As redes sociais são cada vez mais usadas por atores políticos no mundo todo. Segundo o estudo Twiplomacy 2018, 
-					97% dos países membros da ONU possuem uma representação oficial no Twitter, e no Brasil sabemos que pelo menos 439 
-					atores políticos utilizam o Twitter.</p>
-					<p>Esses dados são relevantes, pois o Twitter se tornou uma plataforma de comunicação direta entre os políticos e 
-					os cidadãos, e de debate entre os próprios políticos. Essa plataforma porém, permite que seus usuários removam postagens 
-					realizadas em qualquer tempo sem deixar qualquer registro dessa remoção. </p>
-					<p>Ao contrário dos particulares, esses atores políticos estão cumprindo mandatos ou são nomeados para cargos de governo, 
-					e portanto deveriam ter seu discurso pautado pelos princípios da administração pública. Um desses princípios, o da publicidade, 
-					é contrário a possibilidade de remover conteúdos.</p>
-					<p>A partir disso nasceu o projeto 7c0, com o objetivo de criar mecanismos para garantir que postagens realizadas por um 
-					ator político em um ambiente público como o Twitter sejam arquivadas e recuperadas caso sejam deletadas.</p>
-					<p>Como existe uma confusão entre as postagens do particular e do ator político, o projeto 7c0 considera que todo o 
-					conteúdo da conta representa a atuação política daquela pessoa a partir do momento que ela assume o cargo.</p>
-					<p>O projeto 7c0 é desenvolvido em código aberto e está hospedado na Amazon Web Services. <a href="https://apoia.se/projeto7c0">
-					O projeto está com financiamento coletivo no site do Apoia-se, contribua</a>.</p>
-                </article>
-				<aside id="sidebar">
-                <div class="dark">
-                    <h3>Entre em contato conosco</h3>
-                    <!--
-                        <form action="getaquote.php" class="quote"></form>                        
-                    -->
-                    <form class="quote" action="https://formspree.io/bigbrother@projeto7c0.com.br" method="POST">
+<html lang="pt-br">
 
-                        <div>
-                            <label for="contact-name">Nome</label><br>
-                            <input type="text" class="form-control" id="contact-name" name="name" placeholder="Digite seu nome..."
-                                onkeyup='validateName()'>
-                            <br>
-                            <span class='error-message' id='name-error'></span>
-                        </div>
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163521545-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-                        <div>
-                            <label for="contact-email">E-mail</label><br>
-                            <input type="email" class="form-control" id="contact-email" name="email" placeholder="Digite seu e-mail..."
-                                onkeyup='validateEmail()'>
-                            <span class='error-message' id='email-error'></span>
-                        </div>
+    gtag('config', 'UA-163521545-1');
+  </script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="description"
+    content="Website do Projeto 7C0. Monitorando as redes sociais de autoridades para evitar que postagens sejam removidas.">
+  <meta name="keywords"
+    content="Projeto 7C0, monitoramento, políticos, atores públicos, twitter, autoridades, bot, bots">
+  <link rel="icon" type="image/x-icon" href="./img/eye.ico" />
+  <title>Projeto 7C0 | Sobre</title>
+  <link href="https://fonts.googleapis.com/css?family=Merriweather%7CRoboto+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
 
-                        <div>
-                            <label for="contact-comment">Mensagem</label><br>
-                            <textarea class="form-control" rows="5" id='contact-comment' name='comment' placeholder="Digite sua mensagem..."
-                                onkeyup='validateMessage()'></textarea>
-                            <span class='error-message' id='comment-error'></span>
-                        </div>
+  <script src="./js/scripts.js"></script>
+</head>
 
-                        <button class="button_1" type="submit" onclick='return validateForm()'>Enviar</button>
-                        <br>
-                        <span class='error-message' id='submit-error'></span>
-
-                    </form>
-                </div>
-            </aside>
-
-				<article id="main-col">
-					<h3>Lista de apoiadores</h3>
-				</article>
-    
-            </div>
-        </section>
-		
-    <section id="newsletter">
-        <div class="container">
-
-            <h3>Receba atualizações do projeto &nbsp;</h3>
-            <form action="https://www.nucleo.jor.br/newsletters/7c0/"
-                method="post" target="_blank" novalidate>
-                <input class="button_1" type="submit" value="Inscreva-se" name="subscribe">
-            </form>
+<body>
+  <div class="container">
+    <header>
+      <div class="row">
+        <div class="col-12 col-lg-4">
+          <a href="/">
+            <h1>PROJETO 7c0</h1>
+          </a>
         </div>
+        <div class="col-12 col-lg-8">
+          <div class="row">
+            <div class="col-12 col-md-6 col-lg-3 current"><a href="about.html">iniciativas</a></div>
+            <div class="col-12 col-md-6 col-lg-3"><a href="source.html">transparência</a></div>
+            <div class="col-lg-6"></div>
+            <div class="col-12 col-md-6 col-lg-3"><a href="media.html">Na mídia</a></div>
+            <div class="col-12 col-md-6 col-lg-3"><a target="_blank" href="https://apoia.se/projeto-7c0">Apoie</a></div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-9">
+          <p>&nbsp;</p>
+
+          <h1>Sobre o projeto</h1>
+          <p>O projeto 7c0 é um conjunto de iniciativas que possuem em comum o uso de tecnologias para o interesse
+            público. Atualmente são quatro as principais iniciativas do projeto.
+          </p>
+
+          <p>&nbsp;</p>
+
+          <h2><a href="https://twitter.com/projeto7C0/">Recuperação de tweets apagados</a></h2>
+          <p>As redes sociais são cada vez mais usadas por atores políticos no mundo todo. Segundo o estudo Twiplomacy
+            2018, 97% dos países membros da ONU possuem uma representação oficial no Twitter, e no Brasil sabemos que
+            pelo menos 500 atores políticos utilizam o Twitter.</p>
+          <p>Esses dados são relevantes, pois o Twitter se tornou uma plataforma de comunicação direta entre os
+            políticos e os cidadãos, e de debate entre os próprios políticos. Essa plataforma porém, permite que seus
+            usuários removam postagens realizadas em qualquer tempo sem deixar qualquer registro dessa remoção.</p>
+          <p>Ao contrário dos particulares, esses atores políticos estão cumprindo mandatos ou são nomeados para cargos
+            de governo, e portanto deveriam ter seu discurso pautado pelos princípios da administração pública. Um
+            desses princípios, o da publicidade, é contrário a possibilidade de remover conteúdos.</p>
+          <p>A partir disso nasceu a primeira iniciativa do projeto 7c0, com o objetivo de criar mecanismos para
+            garantir
+            que postagens realizadas por um ator político em um ambiente público como o Twitter sejam arquivadas e
+            recuperadas caso sejam deletadas.</p>
+          <p>Como existe uma confusão entre as postagens do particular e do ator político, o projeto 7c0 considera que
+            todo conteúdo da conta representa a atuação política daquela pessoa a partir do momento que ela assume o
+            cargo.</p>
+          <p>Essa iniciativa é desenvolvida em código aberto e está hospedado na Amazon Web Services.</p>
+
+          <p>&nbsp;</p>
+
+          <h2><a href="https://projeto7c0.com.br/iniciativas/portal_transparencia.html">Acompanhamento de dados de registros de cartórios</a></h2>
+          <p>Durante a pandemia de Covid-19 os dados do <a
+              href="https://transparencia.registrocivil.org.br/inicio">portal de Transparência do Registro Civil</a>
+            foram utilizados para criação de peças de desinformação. </p>
+            <p>Para auxiliar no desmonte dessas peças, o projeto7c0 acompanhou diariamente a evolução dos dados e o funcionamento do portal.</p>
+            <p>Essas peças usam erroneamente dados publicados no final de um mês para comparar com o mesmo mês do ano anterior sem considerar, contudo eventuais atrasos na publicação dos registros de óbitos.</p>
+            <p>Isso faz com que o número de mortes pareça não ser afetado pela pandemia.</p>
+            <p>O acompanhamento realizado pelo projeto7c0 mostrou que ao considerar os atrasos existentes na publicação de dados no portal de Transparência do Registro Civil, os dados publicados são condizentes com o número de óbitos publicado no site do Ministério da Saúde.</p>
+            <p>Essas informações estão disponíveis no twitter do projeto7c0 e também na planilha que pode ser baixada <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTz_EEQvWTuTAwB9L30I8YtuAkEGVBMrSVjC_7eFArU4GiybTywC1mxZqZF9X-s88hbK7di6E-x3fpf/pub?gid=1588275967&single=true&output=csv">aqui</a>.</p>
+            <p>&nbsp;</p>
+
+          <h2><a href="https://projeto7c0.com.br/pwned-antifas/">Pwned Antifas</a></h2>
+          <p>No dia 3 de junho de 2020, um dossiê com dados pessoais de “antifascistas” começou a circular na internet. O dossiê continha endereço, telefone e e-mail dos acusados, e a divulgação poderia colocar em risco a vida de diversas pessoas.</p>
+          <p>Assim, o projeto7c0 desenvolveu em parceria com o <a href="https://cuducos.me/">Eduardo Cuducos</a>, uma iniciativa que permite que interessados verifiquem de forma sigilosa, se seus nomes foram expostos no dossiê.</p>
+          <p>Nesse sentido foi desenvolvido um site que permite confirmar a presença de informações sem necessitar, contudo, do preenchimento de dados pessoais.</p>
+          <p>Além disso, a iniciativa tinha como objetivo promover educação em segurança da informação ao orientar as pessoas a não preencherem seus dados em sites desconhecidos.</p>
+          <p>&nbsp;</p>
+
+          <h2><a href="https://anchor.fm/podcast7c0">Podcast 7c0</a></h2>
+          <p>Desde de dezembro de 2020 o projeto7c0 também produz um podcast, o podcast7c0. Este foi produzido de forma a complementar as outras iniciativas auxiliando na compreensão das ferramentas de tecnologia usadas atualmente.</p>
+          <p>O objetivo é discutir o uso de tecnologia em publicações quinzenais com duração de 15 minutos, trazendo um assunto relevante ou uma curiosidade sobre a computação.</p>
+          <p>O podcast7c0 está atualmente hospedado no <a href="https://anchor.fm/podcast7c0">Anchor</a>.</p>
+
+
+        </div>
+
+        <div class="col-12 col-lg-3">
+          <p>&nbsp;</p>
+
+          <h3>Entre em contato conosco</h3>
+          <form class="quote" action="https://formspree.io/bigbrother@projeto7c0.com.br" method="POST">
+
+            <div>
+              <label for="contact-name">Nome</label><br>
+              <input type="text" class="form-control" id="contact-name" name="name" placeholder="Digite seu nome..."
+                onkeyup='validateName()'>
+              <span class='error-message' id='name-error'></span>
+            </div>
+
+            <div>
+              <label for="contact-email">E-mail</label><br>
+              <input type="email" class="form-control" id="contact-email" name="email"
+                placeholder="Digite seu e-mail..." onkeyup='validateEmail()'>
+              <span class='error-message' id='email-error'></span>
+            </div>
+
+            <div>
+              <label for="contact-comment">Mensagem</label><br>
+              <textarea class="form-control" rows="5" id='contact-comment' name='comment'
+                placeholder="Digite sua mensagem..." onkeyup='validateMessage()'></textarea>
+              <span class='error-message' id='comment-error'></span>
+            </div>
+
+            <br />
+            <button class="btn btn-dark" type="submit" onclick='return validateForm()'>Enviar</button>
+            <br>
+            <span class='error-message' id='submit-error'></span>
+
+          </form>
+          <p>&nbsp;</p>
+
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12 col-lg-9">
+          <h1>Financiadores do projeto</h1>
+          <p>O projeto só consegue se manter funcionando graças a contribuição dos nossos financiadores.</p>
+          <p>Quer ajudar também? Acesso o nosso <a href="https://apoia.se/projeto-7c0">apoia-se.</a></p>
+          <h2>Círculo Interno do Partido</h2>
+          <ul>
+            <li>
+              <p>Daniel Leal dos Santos</p>
+            </li>
+            <li>
+              <p>Rafaela Nakano</p>
+            </li>
+            <li>
+              <p>Rodolfo Viana</p>
+            </li>
+            <li>
+              <p>Sérgio Spagnuolo</p>
+            </li>
+          </ul>
+          <h2>Círculo Externo do Partido</h2>
+          <ul>
+            <li>
+              <p>Anderson Rodrigues</p>
+            </li>
+            <li>
+              <p>Carlos Goettenauer</p>
+            </li>
+            <li>
+              <p>Daniel Schwabe</p>
+            </li>
+            <li>
+              <p>Gabriela Sá Pessoa</p>
+            </li>
+            <li>
+              <p>Plínio Lopes</p>
+            </li>
+            <li>
+              <p>Renata Hirota</p>
+            </li>
+            <li>
+              <p>Tiago Moraes</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <section id="newsletter">
+      <div class="container">
+        <div class="row">
+          <div class="col centralized">
+            <h3>Receba atualizações do projeto &nbsp;</h3>
+            <a href="https://www.nucleo.jor.br/newsletters/7c0/"
+            class="col-12 col-md-2 btn btn-light button_1">Inscreva-se</a>
+          </div>
+        <div class="row">
+          <div class="col centralized">
+            <h3>bigbrother@projeto7c0.com.br</h3>
+          </div>
+        </div>
+      </div>
     </section>
 
-		
-        <footer>
-            <p>Projeto 7C0, Copyright &copy; 2019</p>
-        </footer>
-    </body>
+
+    <footer>
+      <h5>Projeto 7C0, Copyright &copy; 2020</h5>
+    </footer>
+  </div>
+</body>
+
 </html>
 
 <!-- Browser Sync -->
-<!-- 
-    You can sync this code using VSCode Browser Sync by typing "Server mode in browser" and then
-    chosing the following files to be sync "*.html|./css/*.css".
+<!--
+You can sync this code using VSCode Browser Sync by typing "Server mode in browser" and then
+chosing the following files to be sync "*.html|./css/*.css".
 -->
-
