@@ -17,7 +17,8 @@
 		content="Website do Projeto 7C0. Monitorando as redes sociais de autoridades para evitar que postagens sejam removidas.">
 	<meta name="keywords"
 		content="Projeto 7C0, monitoramento, políticos, atores públicos, twitter, autoridades, bot, bots">
-	<meta http-equiv="Content-Security-Policy" content="frame-ancestors http://metabase-7c0.us-east-1.elasticbeanstalk.com/">
+	<meta http-equiv="Content-Security-Policy"
+		content="frame-ancestors http://metabase-7c0.us-east-1.elasticbeanstalk.com/">
 
 
 	<link rel="icon" type="image/x-icon" href="./img/eye.ico" />
@@ -65,16 +66,25 @@
 		<div class="container">
 			<iframe
 				src="https://metabase-7c0.us-east-1.elasticbeanstalk.com/public/dashboard/a0831378-9696-430d-a2eb-d78018df23c1"
-				frameborder="0" width="800" height="600" allowtransparency ></iframe>
+				frameborder="0" width="800" height="600" allowtransparency></iframe>
 		</div>
 
 		<section id="newsletter">
 			<div class="container">
 				<div class="row">
 					<div class="col centralized">
-						<h3>Assine a newsletter do projeto &nbsp;</h3>
-						<a href="https://projeto7c0.us20.list-manage.com/subscribe/post?u=984470f280d60b82c247e3d7b&amp;id=00a31b0d4a"
-							class="col-12 col-md-2 btn btn-light button_1">Inscreva-se</a>
+						<form action="https://buttondown.com/api/emails/embed-subscribe/impressa.news" method="post"
+							target="popupwindow" onsubmit="window.open('https://arquivo.impressa.news', 'popupwindow')"
+							class="embeddable-buttondown-form">
+							<label for="bd-email">Enter your email</label>
+							<input type="email" name="email" id="bd-email" />
+
+							<input type="submit" value="Subscribe" />
+							<p>
+								<a href="https://buttondown.com/refer/impressa.news" target="_blank">Powered by
+									Buttondown.</a>
+							</p>
+						</form>
 					</div>
 				</div>
 				<div class="row">
