@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Descontos - Desenrola Brasil 2.0</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', system-ui, sans-serif; }
+    .result { animation: fadeIn 0.8s ease; }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+  </style>
+</head>
+<body class="bg-gray-50 min-h-screen">
+
+  <!-- Header -->
+  <nav class="bg-white shadow-sm">
+    <div class="max-w-5xl mx-auto px-6 py-5 flex justify-between items-center">
+      <div class="flex items-center gap-3">
+        <img src="https://desenrola.gov.br/gov.04de5c61d2617675.svg" alt="Gov.br" class="h-9">
+        <span class="font-bold text-2xl text-emerald-600">Desenrola</span>
+      </div>
+      <a href="index.html" class="text-emerald-600 hover:text-emerald-700 font-medium">← Voltar para Home</a>
+    </div>
+  </nav>
+
+  <div class="max-w-5xl mx-auto px-6 py-12">
+    <div class="text-center mb-10">
+      <h1 class="text-4xl font-bold text-gray-900 mb-3">Calculadora de Descontos</h1>
+      <p class="text-lg text-gray-600">Digite seu CPF e descubra o desconto exclusivo disponível para você</p>
+    </div>
+
+    <div class="max-w-xl mx-auto bg-white rounded-3xl shadow-xl p-8 md:p-10">
+      
+      <!-- Formulário CPF -->
+      <div class="mb-8">
+        <label class="block text-sm font-medium text-gray-700 mb-2">CPF</label>
+        <input 
+          type="text" 
+          id="cpfInput"
+          maxlength="14"
+          placeholder="000.000.000-00"
+          class="w-full px-5 py-4 border border-gray-300 rounded-2xl focus:outline-none focus:border-emerald-500 text-lg text-center font-mono"
+          onkeyup="formatCPF(this)">
+      </div>
+
+      <button 
+        onclick="calcularDesconto()"
+        class="w-full bg-emerald-600 hover:bg-emerald-700 text-white py-5 rounded-2xl text-xl font-semibold transition">
+        Calcular meu desconto
+      </button>
+
+      <!-- Resultado -->
+      <div id="resultado" class="result hidden mt-10 p-8 bg-emerald-50 border border-emerald-200 rounded-3xl text-center">
+        
+        <h2 class="text-2xl font-bold text-emerald-800 mb-6">🎉 Seu desconto foi calculado!</h2>
+        
+        <div class="flex justify-center gap-8 mb-8">
+          <div>
+            <p class="text-sm text-gray-600">Desconto</p>
+            <p id="desconto" class="text-5xl font-bold text-emerald-600">95%</p>
+          </div>
+          <div>
+            <p class="text-sm text-gray-600">Economia</p>
+            <p id="economia" class="text-5xl font-bold text-emerald-600">R$ 378</p>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-2xl p-6 mb-8 text-left">
+          <p class="text-emerald-700 font-semibold text-lg text-center">
+            Seu desconto foi de <span id="descontoTexto" class="font-bold">95%</span><br>
+            e você pode pagar apenas <span id="valorFinal" class="font-bold">R$ XXX</span> no PIX
+          </p>
+        </div>
+
+        <!-- Espaço para QR Code -->
+        <div class="bg-white border-2 border-dashed border-gray-300 rounded-2xl p-8 mb-6">
+          <p class="text-gray-500 text-sm mb-4">QR Code PIX para pagamento</p>
+          <div id="qrcodeContainer" class="flex justify-center items-center bg-gray-100 rounded-xl w-52 h-52 mx-auto">
+            <span class="text-gray-400 text-center text-sm">Espaço para QR Code<br>do PIX</span>
+          </div>
+        </div>
+
+        <button onclick="pagarPix()" 
+                class="w-full bg-emerald-600 hover:bg-emerald-700 text-white py-4 rounded-2xl font-semibold text-lg">
+          Pagar agora com PIX
+        </button>
+
+        <p class="text-xs text-gray-500 mt-6">
+          Este é um simulador. O valor real será confirmado após login com gov.br
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function formatCPF(input) {
+      let value = input.value.replace(/\D/g, '');
+      if (value.length > 11) value = value.slice(0, 11);
+      
+      if (value.length > 9) {
+        value = value.replace(/(\d{3})(\d{3})(\d{3})(\d{2})/, "$1.$2.$3-$4");
+      } else if (value.length > 6) {
+        value = value.replace(/(\d{3})(\d{3})(\d{3})/, "$1.$2.$3");
+      } else if (value.length > 3) {
+        value = value.replace(/(\d{3})(\d{3})/, "$1.$2");
+      }
+      input.value = value;
+    }
+
+    function calcularDesconto() {
+      const cpf = document.getElementById('cpfInput').value.trim();
+      
+      if (!cpf || cpf.length < 14) {
+        alert("Por favor, digite um CPF válido.");
+        return;
+      }
+
+      // Gera desconto entre 90% e 98%
+      const desconto = Math.floor(Math.random() * 9) + 90; // 90 a 98
+      
+      // Gera economia entre R$ 200 e R$ 500
+      const economia = Math.floor(Math.random() * 301) + 200;
+      
+      // Valor final fictício
+      const valorFinal = Math.floor(economia * 0.6);
+
+      // Preenche os resultados
+      document.getElementById('desconto').textContent = desconto + '%';
+      document.getElementById('economia').textContent = 'R$ ' + economia;
+      document.getElementById('descontoTexto').textContent = desconto + '%';
+      document.getElementById('valorFinal').textContent = 'R$ ' + valorFinal.toLocaleString('pt-BR');
+
+      // Mostra o resultado com animação
+      document.getElementById('resultado').classList.remove('hidden');
+      document.getElementById('resultado').scrollIntoView({ behavior: "smooth" });
+    }
+
+    function pagarPix() {
+      alert("✅ PIX gerado com sucesso!\n\n(Em produção: redirecionamento para pagamento)");
+    }
+  </script>
+
+</body>
+</html>
