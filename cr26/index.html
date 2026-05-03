@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desenrola Brasil 2.0</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', system-ui, sans-serif; }
+    .hero { background: linear-gradient(135deg, #003087 0%, #00A84F 100%); }
+    video { width: 100%; height: 100%; object-fit: cover; }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+
+  <!-- NAV -->
+  <nav class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <div class="flex items-center gap-3">
+        <img src="https://desenrola.gov.br/gov.04de5c61d2617675.svg" alt="Gov.br" class="h-10">
+        <span class="font-bold text-2xl text-emerald-600">Desenrola</span>
+      </div>
+      <a href="calculadora.html" 
+         class="bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-3 rounded-xl font-semibold transition">
+        Calcular meu desconto
+      </a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero text-white py-24">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <h1 class="text-5xl md:text-6xl font-bold leading-tight mb-6">
+          Desenrole sua vida financeira
+        </h1>
+        <p class="text-xl mb-8 opacity-90">
+          Negocie suas dívidas com grandes descontos, parcelamento facilitado e segurança do Governo Federal.
+        </p>
+        <a href="calculadora.html" 
+           class="inline-block bg-white text-emerald-700 hover:bg-gray-100 px-10 py-4 rounded-2xl text-lg font-semibold shadow-xl transition transform hover:scale-105">
+          Calcular meu desconto agora
+        </a>
+      </div>
+      <img src="/attachments/image.png" 
+           alt="Pessoa negociando" 
+           class="w-full max-w-md mx-auto drop-shadow-2xl">
+    </div>
+  </section>
+
+  <!-- Vídeos Institucionais -->
+  <section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-4">Vídeos Institucionais</h2>
+      <p class="text-center text-gray-600 mb-12">Conheça melhor o Desenrola Brasil</p>
+      
+      <div class="grid md:grid-cols-2 gap-10 max-w-5xl mx-auto">
+        
+        <!-- Vídeo 1 -->
+        <div class="bg-white rounded-3xl shadow-lg overflow-hidden">
+          <div class="aspect-video bg-black">
+            <video controls muted class="w-full h-full">
+              <source src="video1.mp4" type="video/mp4">
+              Seu navegador não suporta o elemento de vídeo.
+            </video>
+          </div>
+          <div class="p-6">
+            <h3 class="font-semibold text-xl">Como funciona o Desenrola Brasil</h3>
+            <p class="text-gray-600 mt-2">Entenda o passo a passo da renegociação de dívidas.</p>
+          </div>
+        </div>
+
+        <!-- Vídeo 2 -->
+        <div class="bg-white rounded-3xl shadow-lg overflow-hidden">
+          <div class="aspect-video bg-black">
+            <video controls muted class="w-full h-full">
+              <source src="video2.mp4" type="video/mp4">
+              Seu navegador não suporta o elemento de vídeo.
+            </video>
+          </div>
+          <div class="p-6">
+            <h3 class="font-semibold text-xl">Histórias Reais de Sucesso</h3>
+            <p class="text-gray-600 mt-2">Veja como brasileiros conseguiram limpar o nome e voltar a ter crédito.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- RODAPÉ INSTITUCIONAL -->
+  <footer class="bg-gray-900 text-white">
+    <div class="max-w-7xl mx-auto px-6 pt-16 pb-12">
+      <div class="grid md:grid-cols-4 gap-10">
+        
+        <div>
+          <div class="flex items-center gap-3 mb-6">
+            <img src="https://desenrola.gov.br/gov.04de5c61d2617675.svg" alt="Gov.br" class="h-10 brightness-125">
+            <span class="font-bold text-2xl">Desenrola Brasil</span>
+          </div>
+          <p class="text-gray-400 text-sm leading-relaxed">
+            Programa do Governo Federal para renegociação de dívidas e recuperação de crédito.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="font-semibold mb-4 text-white">Sobre o Programa</h4>
+          <ul class="space-y-3 text-sm text-gray-400">
+            <li><a href="#" class="hover:text-emerald-400 transition">O que é o Desenrola</a></li>
+            <li><a href="#" class="hover:text-emerald-400 transition">Quem pode participar</a></li>
+            <li><a href="#" class="hover:text-emerald-400 transition">Empresas parceiras</a></li>
+            <li><a href="#" class="hover:text-emerald-400 transition">Educação Financeira</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-semibold mb-4 text-white">Ajuda</h4>
+          <ul class="space-y-3 text-sm text-gray-400">
+            <li><a href="#" class="hover:text-emerald-400 transition">Perguntas Frequentes</a></li>
+            <li><a href="#" class="hover:text-emerald-400 transition">Central de Atendimento</a></li>
+            <li><a href="#" class="hover:text-emerald-400 transition">Fale Conosco</a></li>
+            <li><a href="#" class="hover:text-emerald-400 transition">Acessibilidade</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-semibold mb-4 text-white">Governo Federal</h4>
+          <ul class="space-y-3 text-sm text-gray-400">
+            <li><a href="#" class="hover:text-emerald-400 transition">gov.br</a></li>
+            <li><a href="#" class="hover:text-emerald-400 transition">Ministério da Fazenda</a></li>
+            <li><a href="#" class="hover:text-emerald-400 transition">Portal da Transparência</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="border-t border-gray-800 mt-16 pt-8 text-center text-sm text-gray-500">
+        <p>© 2026 Desenrola Brasil — Programa do Governo Federal</p>
+        <p class="mt-1">Todos os direitos reservados. Versão demonstrativa 2.0</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
