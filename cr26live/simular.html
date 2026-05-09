@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simulador Desenrola Brasil 2.0</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <style>
+    .hero-bg { 
+      background: linear-gradient(rgba(0,61,41,0.92), rgba(0,61,41,0.92)), 
+                  url('SUA-IMAGEM-HERO.jpg'); 
+      background-size: cover;
+      background-position: center;
+    }
+  </style>
+</head>
+<body class="font-sans bg-gray-50">
+
+  <!-- HEADER -->
+  <header class="bg-white shadow-sm border-b">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <div class="flex items-center gap-4">
+        <img src="https://desenrola.gov.br/gov.04de5c61d2617675.svg" alt="Governo Federal" class="h-10">
+        <div>
+          <h1 class="text-2xl font-bold text-emerald-800">Desenrola Brasil</h1>
+          <p class="text-xs text-emerald-600 -mt-1">2.0</p>
+        </div>
+      </div>
+      <a href="index.html" class="text-emerald-700 hover:text-emerald-800 font-medium flex items-center gap-2">
+        ← Voltar para a página inicial
+      </a>
+    </div>
+  </header>
+
+  <main class="max-w-4xl mx-auto px-6 py-12">
+    
+    <div class="text-center mb-10">
+      <h2 class="text-4xl font-bold text-emerald-900 mb-3">Simulador de Desconto</h2>
+      <p class="text-lg text-gray-600">Informe seu CPF para verificar seu desconto personalizado no Desenrola Brasil 2.0</p>
+    </div>
+
+    <!-- FORMULÁRIO -->
+    <div id="formulario" class="bg-white rounded-3xl shadow-xl p-10 max-w-xl mx-auto">
+      <div class="mb-8">
+        <label class="block text-sm font-medium text-gray-700 mb-2">CPF</label>
+        <input 
+          type="text" 
+          id="cpf" 
+          maxlength="14"
+          placeholder="000.000.000-00"
+          class="w-full px-6 py-5 text-xl border border-gray-300 rounded-2xl focus:outline-none focus:border-emerald-600 focus:ring-2 focus:ring-emerald-200">
+      </div>
+
+      <button onclick="simularDesconto()" 
+              class="w-full bg-emerald-700 hover:bg-emerald-800 text-white py-6 rounded-2xl text-xl font-bold transition flex items-center justify-center gap-3">
+        <i class="fas fa-calculator"></i>
+        VER MEU DESCONTO
+      </button>
+    </div>
+
+    <!-- RESULTADO -->
+    <div id="resultado" class="hidden bg-white rounded-3xl shadow-2xl p-10 mt-8">
+      <div class="text-center mb-8">
+        <h3 class="text-3xl font-bold text-emerald-800">Parabéns!</h3>
+        <p class="text-gray-600 mt-2">Seu desconto foi liberado pelo Governo Federal</p>
+      </div>
+
+      <div class="bg-emerald-50 border border-emerald-200 rounded-2xl p-8 text-center mb-10">
+        <p class="text-lg text-gray-600">Seu desconto aprovado:</p>
+        <p id="desconto" class="text-6xl font-bold text-emerald-700 mt-2">95%</p>
+      </div>
+
+      <div class="text-center mb-10">
+        <p class="text-xl">Você pode pagar apenas</p>
+        <p id="valorFinal" class="text-5xl font-bold text-emerald-800 mt-3">R$ 347,00</p>
+        <p class="text-emerald-600 font-medium">no PIX à vista</p>
+      </div>
+
+      <div class="bg-gray-100 border-2 border-dashed border-gray-300 rounded-2xl p-8 text-center mb-10">
+        <p class="text-sm text-gray-500 mb-4">QR Code PIX</p>
+        <div id="qrcode-placeholder" class="bg-white mx-auto w-64 h-64 flex items-center justify-center border rounded-xl">
+          <p class="text-gray-400 text-center">Espaço para o QR Code PIX<br><span class="text-xs">(insira a imagem aqui)</span></p>
+        </div>
+      </div>
+
+      <div class="text-center">
+        <button onclick="copiarCodigoPix()" 
+                class="bg-emerald-700 hover:bg-emerald-800 text-white px-10 py-4 rounded-2xl font-semibold flex items-center gap-3 mx-auto">
+          <i class="fas fa-copy"></i> Copiar código PIX
+        </button>
+        <p class="text-xs text-gray-500 mt-6">
+          Este pagamento é seguro e processado diretamente pelo sistema do Governo Federal.
+        </p>
+      </div>
+    </div>
+
+  </main>
+
+  <script>
+    function formatarCPF(cpf) {
+      cpf = cpf.replace(/\D/g, '');
+      cpf = cpf.replace(/(\d{3})(\d)/, '$1.$2');
+      cpf = cpf.replace(/(\d{3})(\d)/, '$1.$2');
+      cpf = cpf.replace(/(\d{3})(\d{1,2})$/, '$1-$2');
+      return cpf;
+    }
+
+    document.getElementById('cpf').addEventListener('input', function(e) {
+      e.target.value = formatarCPF(e.target.value);
+    });
+
+    function simularDesconto() {
+      const cpfInput = document.getElementById('cpf').value.trim();
+
+      if (cpfInput.length < 14) {
+        alert("Por favor, informe um CPF válido.");
+        return;
+      }
+
+      // Gera desconto aleatório entre 90% e 98%
+      const desconto = Math.floor(Math.random() * 9) + 90;
+
+      // Gera valor final entre 200 e 500 reais
+      const valorFinal = (Math.random() * 300 + 200).toFixed(2);
+
+      // Preenche os resultados
+      document.getElementById('desconto').textContent = desconto + "%";
+      document.getElementById('valorFinal').textContent = "R$ " + valorFinal.replace('.', ',');
+
+      // Esconde formulário e mostra resultado
+      document.getElementById('formulario').classList.add('hidden');
+      document.getElementById('resultado').classList.remove('hidden');
+    }
+
+    function copiarCodigoPix() {
+      alert("✅ Código PIX copiado com sucesso!\n\n(chave aleatória gerada pelo simulador)");
+    }
+  </script>
+
+</body>
+</html>
