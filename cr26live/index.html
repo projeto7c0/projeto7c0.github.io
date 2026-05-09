@@ -1,1 +1,129 @@
-<h1>olá mundo</h1>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desenrola Brasil 2.0 - Recomece com o pé direito</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <style>
+    .hero-bg { background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url('SUA-IMAGEM-HERO.jpg'); }
+  </style>
+</head>
+<body class="font-sans">
+
+  <!-- HEADER -->
+  <header class="bg-white shadow-sm border-b">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <div class="flex items-center gap-4">
+        <img src="https://desenrola.gov.br/gov.04de5c61d2617675.svg" alt="Governo Federal" class="h-10">
+        <div>
+          <h1 class="text-2xl font-bold text-emerald-800">Desenrola Brasil</h1>
+          <p class="text-xs text-emerald-600 -mt-1">2.0</p>
+        </div>
+      </div>
+      <nav class="hidden md:flex gap-8 text-sm font-medium">
+        <a href="#" class="hover:text-emerald-600">O Programa</a>
+        <a href="#" class="hover:text-emerald-600">Quem pode participar</a>
+        <a href="#" class="hover:text-emerald-600">Benefícios</a>
+        <a href="#" class="hover:text-emerald-600">Notícias</a>
+      </nav>
+      <a href="#simular" class="bg-emerald-700 hover:bg-emerald-800 text-white px-6 py-3 rounded-lg font-semibold flex items-center gap-2">
+        <i class="fas fa-calculator"></i> Simular agora
+      </a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero-bg bg-cover bg-center text-white py-24 md:py-32">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <h2 class="text-5xl md:text-6xl font-bold leading-tight mb-6">
+        Descontos de até <span class="text-yellow-400">90%</span><br>
+        e até 48x para pagar
+      </h2>
+      <p class="text-xl md:text-2xl mb-10 max-w-2xl mx-auto">
+        O Governo Federal lançou o <strong>Novo Desenrola Brasil 2.0</strong>. Organize suas finanças e volte a ter crédito.
+      </p>
+      <div class="flex flex-col md:flex-row gap-4 justify-center">
+        <a href="#bancos" class="bg-yellow-400 hover:bg-yellow-300 text-emerald-900 px-10 py-5 rounded-xl text-xl font-bold">
+          Renegociar com meu banco
+        </a>
+        <a href="#quem-pode" class="border-2 border-white hover:bg-white/10 px-10 py-5 rounded-xl text-xl font-medium">
+          Ver se eu posso participar
+        </a>
+      </div>
+      <p class="mt-8 text-sm opacity-90">Programa lançado em 04/05/2026 • Duração: 90 dias</p>
+    </div>
+  </section>
+
+  <!-- BENEFÍCIOS -->
+  <section class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-6">
+      <h3 class="text-4xl font-bold text-center mb-12">O que o Desenrola 2.0 oferece?</h3>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white p-8 rounded-2xl shadow hover:shadow-xl transition">
+          <div class="text-6xl mb-4">💰</div>
+          <h4 class="text-2xl font-bold mb-3">Desconto de até 90%</h4>
+          <p class="text-gray-600">Sobre dívidas antigas de cartão, cheque especial e CDC.</p>
+        </div>
+        <div class="bg-white p-8 rounded-2xl shadow hover:shadow-xl transition">
+          <div class="text-6xl mb-4">📆</div>
+          <h4 class="text-2xl font-bold mb-3">Até 48 parcelas</h4>
+          <p class="text-gray-600">+ carência de 35 dias para começar a pagar.</p>
+        </div>
+        <div class="bg-white p-8 rounded-2xl shadow hover:shadow-xl transition">
+          <div class="text-6xl mb-4">🏦</div>
+          <h4 class="text-2xl font-bold mb-3">FGTS + Juros baixos</h4>
+          <p class="text-gray-600">Use até 20% do FGTS (ou R$ 1 mil). Juros máximos de 1,99% a.m.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUEM PODE -->
+  <section id="quem-pode" class="py-20">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <h3 class="text-4xl font-bold mb-8">Quem pode participar?</h3>
+          <ul class="space-y-6 text-lg">
+            <li class="flex gap-4"><span class="text-emerald-600 text-2xl">✓</span> <span>Pessoas com renda de até 5 salários mínimos (R$ 8.105)</span></li>
+            <li class="flex gap-4"><span class="text-emerald-600 text-2xl">✓</span> <span>Dívidas contratadas até 31/01/2026 e atrasadas entre 90 dias e 2 anos</span></li>
+            <li class="flex gap-4"><span class="text-emerald-600 text-2xl">✓</span> <span>Cartão de crédito, cheque especial e crédito pessoal (CDC)</span></li>
+            <li class="flex gap-4"><span class="text-emerald-600 text-2xl">✓</span> <span>Dívidas de até R$ 100 são desnegativadas automaticamente</span></li>
+          </ul>
+        </div>
+        <div class="bg-emerald-50 p-10 rounded-3xl">
+          <p class="text-2xl font-medium leading-relaxed">"É a chance de limpar o nome e recomeçar com condições justas."</p>
+          <p class="mt-6 font-semibold">- Ministério da Fazenda</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANCOS -->
+  <section id="bancos" class="py-20 bg-emerald-800 text-white">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <h3 class="text-4xl font-bold mb-6">A renegociação é feita diretamente com os bancos</h3>
+      <p class="text-xl mb-12">Procure seu banco ou instituição financeira e informe que quer usar o Novo Desenrola Brasil.</p>
+      <div class="flex flex-wrap justify-center gap-8 text-2xl">
+        <!-- Adicione logos dos bancos aqui (você disse que copiou imagens) -->
+        <div class="bg-white/10 px-8 py-6 rounded-2xl">CAIXA</div>
+        <div class="bg-white/10 px-8 py-6 rounded-2xl">Banco do Brasil</div>
+        <div class="bg-white/10 px-8 py-6 rounded-2xl">Itaú</div>
+        <div class="bg-white/10 px-8 py-6 rounded-2xl">Bradesco</div>
+        <div class="bg-white/10 px-8 py-6 rounded-2xl">+ Outros</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RODAPÉ -->
+  <footer class="bg-gray-900 text-gray-400 py-12">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <img src="https://desenrola.gov.br/gov.04de5c61d2617675.svg" alt="Governo" class="h-8 mx-auto mb-6 opacity-75">
+      <p>Programa do Governo Federal • Ministério da Fazenda</p>
+      <p class="text-sm mt-4">Desenrola Brasil 2.0 © 2026</p>
+    </div>
+  </footer>
+</body>
+</html>
